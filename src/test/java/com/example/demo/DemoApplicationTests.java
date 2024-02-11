@@ -27,64 +27,6 @@ class DemoApplicationTests {
     DeckCardRepository deckCardRepository;
 
     @Test
-    void deckExport() {
-        List<Deck> deckList = deckRepository.findAll();
-        for (Deck deck : deckList) {
-            StringBuilder pokemon = new StringBuilder("Pokémon").append("\n");
-            StringBuilder trainer = new StringBuilder("Trainer").append("\n");
-            StringBuilder energy = new StringBuilder("Energy").append("\n");
-            List<DeckCard> deckCardList = deckCardRepository.findDeckCardByDeckCardId_DeckId(deck.getId());
-            for (DeckCard deckcard : deckCardList) {
-                CardId cardId = deckcard.getDeckCardId().getCardId();
-                Card card = cardRepository.findByCardId(cardId);
-                String cardName = card.getNickName();
-                if (card.getChineseName() != null && !card.getChineseName().isBlank()) cardName = card.getChineseName();
-                switch (card.getType()) {
-                    case "Pokémon" ->
-                            pokemon.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
-                    case "Trainer" ->
-                            trainer.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
-                    case "Energy" ->
-                            energy.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
-                }
-            }
-            File file = new File("deck/" + deck.getDeckName());
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
-                // 将三个StringBuilder的内容按顺序写入文件
-                writer.write(pokemon.toString());
-                writer.write(trainer.toString());
-                writer.write(energy.toString());
-                System.out.println("所有StringBuilder的内容已成功写入文件。");
-            } catch (IOException e) {
-                log.error(e.getMessage());
-            }
-        }
-    }
-    @Test
-    void deckExportCSV() {
-        List<Deck> deckList = deckRepository.findAll();
-        for (Deck deck : deckList) {
-            StringBuilder sb = new StringBuilder("QTY,Name,Type,URL");
-            List<DeckCard> deckCardList = deckCardRepository.findDeckCardByDeckCardId_DeckId(deck.getId());
-            for (DeckCard deckcard : deckCardList) {
-                CardId cardId = deckcard.getDeckCardId().getCardId();
-                Card card = cardRepository.findByCardId(cardId);
-                String cardName = card.getNickName();
-                if (card.getChineseName() != null && !card.getChineseName().isBlank()) cardName = card.getChineseName();
-                sb.append("\n").append(deckcard.getQuantity()).append(",").append(cardName).append(",").append(card.getType()).append(",").append("http://localhost:4000/src/img/en/").append(cardId.getSetName()).append("/").append(cardId.getSetName()).append("_").append(cardId.getSetNumber()).append("_R_EN.png");
-            }
-            File file = new File("deck/" + deck.getDeckName()+".csv");
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
-                // 将三个StringBuilder的内容按顺序写入文件
-                writer.write(sb.toString());
-                System.out.println("所有StringBuilder的内容已成功写入文件。");
-            } catch (IOException e) {
-                log.error(e.getMessage());
-            }
-        }
-    }
-
-    @Test
     void deckInsert() {
         Long deckId = 2L;
         Long quantity = 1L;
