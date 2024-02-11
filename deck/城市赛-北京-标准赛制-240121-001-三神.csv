@@ -1,0 +1,28 @@
+QTY,Name,Type,URL
+1,伽勒尔 闪电鸟V,Pokémon,http://localhost:4000/src/img/en/ASR/ASR_TG19_R_EN.png
+2,伽勒尔 火焰鸟V,Pokémon,http://localhost:4000/src/img/en/ASR/ASR_TG20_R_EN.png
+2,苍响V,Pokémon,http://localhost:4000/src/img/en/ASR/ASR_TG21_R_EN.png
+1,离洞绳,Trainer,http://localhost:4000/src/img/en/BUS/BUS_163_R_EN.png
+4,基本恶能量,Energy,http://localhost:4000/src/img/en/BUS/BUS_168_R_EN.png
+2,阿尔宙斯&帝牙卢卡&帕路奇亚,Pokémon,http://localhost:4000/src/img/en/CEC/CEC_221_R_EN.png
+1,超强捕捉器,Trainer,http://localhost:4000/src/img/en/CEC/CEC_264_R_EN.png
+2,基本水能量,Energy,http://localhost:4000/src/img/en/CIN/CIN_124_R_EN.png
+1,山谷回声喇叭,Trainer,http://localhost:4000/src/img/en/CRE/CRE_225_R_EN.png
+1,叉字蝠V,Pokémon,http://localhost:4000/src/img/en/LOR/LOR_TG20_R_EN.png
+4,老大的指令,Trainer,http://localhost:4000/src/img/en/RCL/RCL_189_R_EN.png
+1,大护符,Trainer,http://localhost:4000/src/img/en/RCL/RCL_206_R_EN.png
+3,能量转移,Trainer,http://localhost:4000/src/img/en/SIT/SIT_212_R_EN.png
+3,极光能量,Energy,http://localhost:4000/src/img/en/SSH/SSH_186_R_EN.png
+2,玛俐,Trainer,http://localhost:4000/src/img/en/SSH/SSH_200_R_EN.png
+1,气球,Trainer,http://localhost:4000/src/img/en/SSH/SSH_213_R_EN.png
+4,金属碟,Trainer,http://localhost:4000/src/img/en/SSH/SSH_214_R_EN.png
+4,先机球,Trainer,http://localhost:4000/src/img/en/SSH/SSH_216_R_EN.png
+4,博士的研究,Trainer,http://localhost:4000/src/img/en/SSP/SSP_152_R_EN.png
+1,白蓬蓬V,Pokémon,http://localhost:4000/src/img/en/SSP/SSP_84_R_EN.png
+2,宝可梦交替,Trainer,http://localhost:4000/src/img/en/SUM/SUM_160_R_EN.png
+5,基本钢能量,Energy,http://localhost:4000/src/img/en/SUM/SUM_163_R_EN.png
+2,咚咚鼠GX,Pokémon,http://localhost:4000/src/img/en/UNB/UNB_195a_R_EN.png
+1,玛夏多,Pokémon,http://localhost:4000/src/img/en/UNB/UNB_81_R_EN.png
+1,大嘴蛙GX,Pokémon,http://localhost:4000/src/img/en/UNM/UNM_246_R_EN.png
+2,贵重球,Trainer,http://localhost:4000/src/img/en/UNM/UNM_250_R_EN.png
+3,常青森林,Trainer,http://localhost:4000/src/img/en/UNM/UNM_256_R_EN.png
