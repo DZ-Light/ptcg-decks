@@ -32,9 +32,12 @@ class DeckExportTxtTest {
     void deckExport() {
         List<Deck> deckList = deckRepository.findAll();
         for (Deck deck : deckList) {
-            StringBuilder pokemon = new StringBuilder("Pokémon").append("\n");
-            StringBuilder trainer = new StringBuilder("Trainer").append("\n");
-            StringBuilder energy = new StringBuilder("Energy").append("\n");
+            StringBuilder pokemon = new StringBuilder("Pokémon ()").append("\n");
+            StringBuilder trainer = new StringBuilder("Trainer ()").append("\n");
+            StringBuilder energy = new StringBuilder("Energy ()").append("\n");
+            Long pokemonCount = 0L;
+            Long trainerCount = 0L;
+            Long energyCount = 0L;
             List<DeckCard> deckCardList = deckCardRepository.findDeckCardByDeckCardId_DeckId(deck.getId());
             for (DeckCard deckcard : deckCardList) {
                 CardId cardId = deckcard.getDeckCardId().getCardId();
@@ -48,16 +51,25 @@ class DeckExportTxtTest {
                     cardId = rareCard.get(0).getCardId();
                 }
                 switch (card.getType()) {
-                    case "Pokémon" ->
-                            pokemon.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
-                    case "Trainer" ->
-                            trainer.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
-                    case "Energy" ->
-                            energy.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
+                    case "Pokémon" -> {
+                        pokemonCount+=deckcard.getQuantity();
+                        pokemon.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
+                    }
+                    case "Trainer" -> {
+                        trainerCount+=deckcard.getQuantity();
+                        trainer.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
+                    }
+                    case "Energy" -> {
+                        energyCount+=deckcard.getQuantity();
+                        energy.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
+                    }
                 }
             }
             File file = new File("deck/" + deck.getDeckName());
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+                pokemon.insert(9,pokemonCount);
+                trainer.insert(9,trainerCount);
+                energy.insert(8,energyCount);
                 // 将三个StringBuilder的内容按顺序写入文件
                 writer.write(pokemon.toString());
                 writer.write(trainer.toString());
