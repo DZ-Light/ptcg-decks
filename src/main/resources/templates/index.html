@@ -9,54 +9,64 @@
     <script src="../static/js/jquery-3.7.1.min.js" th:src="@{/js/jquery-3.7.1.min.js}"></script>
 </head>
 <body>
-
-<main>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-light rounded">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">PTCG-DECKS</a>
-
-                <div class="collapse navbar-collapse" id="ptcg-deck-navbar">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CARD</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">DECK</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">IMPORT</a>
-                        </li>
-                    </ul>
+<div id="root">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PTCG-DECKS</a>
+            <div class="collapse navbar-collapse" id="ptcg-deck-navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CARD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DECK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">IMPORT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="list-group">
+                    <button class="list-group-item list-group-item-action select-deck" th:each="deck : ${decks}"
+                            th:attr="data-deck-id=${deck.id}" type="button">
+                        [[${deck.deckName}]]
+                    </button>
                 </div>
             </div>
-        </nav>
-
-
-        <div>
-            <form>
-                <div class="mb-3">
-                    <label for="deckName" class="form-label">卡组名称</label>
-                    <input type="text" class="form-control" id="deckName">
-                </div>
-                <div class="mb-3">
-                    <label for="deckCode" class="form-label">卡组代码</label>
-                    <textarea class="form-control" id="deckCode" rows="20"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" id="submitEnglish">导入英文</button>
-                <button type="submit" class="btn btn-primary" id="submitChinese">导入简中</button>
-            </form>
+            <div class="col-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="deckId" class="form-label">卡组ID</label>
+                        <input type="text" class="form-control" id="deckId" disabled/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="deckName" class="form-label">卡组名称</label>
+                        <input type="text" class="form-control" id="deckName"/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="deckCode" class="form-label">卡组代码</label>
+                        <textarea class="form-control" id="deckCode" rows="20"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">导入</button>
+                </form>
+            </div>
         </div>
     </div>
     <script>
-        $(document).ready(function() {
-            $("#submitEnglish").click(function(e) {
+        $(document).ready(function () {
+            $("#submitBtn").click(function (e) {
                 e.preventDefault();
-
+                const deckId = $("#deckId").val();
                 const deckName = $("#deckName").val();
                 const deckCode = $("#deckCode").val();
 
                 const data = {
+                    deckId: deckId,
                     deckName: deckName,
                     deckCode: deckCode
                 };
@@ -66,41 +76,40 @@
                     method: "POST",
                     data: JSON.stringify(data),
                     contentType: "application/json",
-                    success: function(response) {
+                    success: function (response) {
                         console.log("成功提交: ", response);
                     },
-                    error: function(error) {
+                    error: function (error) {
                         console.error("提交失败: ", error);
                     }
                 });
             });
-            $("#submitChinese").click(function(e) {
-                e.preventDefault();
-
-                const deckName = $("#deckName").val();
-                const deckCode = $("#deckCode").val();
-
+            $('.select-deck').click(function(event) {
+                // 阻止button的默认表单提交行为
+                event.preventDefault();
                 const data = {
-                    deckName: deckName,
-                    deckCode: deckCode
+                    deckId: $(this).data('deck-id'),
+                    deckName: "",
+                    deckCode: ""
                 };
-
                 $.ajax({
-                    url: "/deck/chineseimport", // 替换为你的API接口地址
-                    method: "POST",
+                    url: '/deck/findCardById', // 后端服务的URL
+                    type: 'POST',
                     data: JSON.stringify(data),
                     contentType: "application/json",
-                    success: function(response) {
-                        console.log("成功提交: ", response);
+                    success: function(data) {
+                        $('#deckId').val(data.deckId);
+                        $('#deckName').val(data.deckName);
+                        $('#deckCode').val(data.deckCode);
                     },
-                    error: function(error) {
-                        console.error("提交失败: ", error);
+                    error: function(xhr, status, error) {
+                        console.error("Error: " + error.message);
                     }
                 });
             });
         });
     </script>
-</main>
+</div>
 
 </body>
 </html>

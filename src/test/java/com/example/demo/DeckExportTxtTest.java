@@ -65,6 +65,7 @@ class DeckExportTxtTest {
                     }
                 }
             }
+            energy.append("总计: ").append(pokemonCount+trainerCount+energyCount);
             File file = new File("deck/" + deck.getDeckName());
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
                 pokemon.insert(9,pokemonCount);
