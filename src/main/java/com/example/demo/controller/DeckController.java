@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -50,7 +51,7 @@ public class DeckController {
                 if (matcherEnergy.find()) {
                     quantity = matcherEnergy.group(1);
                     String energyType = matcherEnergy.group(2);
-                    switch (energyType){
+                    switch (energyType) {
                         case "Fire":
                             setName = "BUS";
                             setNumber = "167";
@@ -112,10 +113,45 @@ public class DeckController {
                 }
                 Card card = Card.builder().cardId(CardId.builder().setName(setName).setNumber(setNumber).build()).nickName(cardName).type(type).build();
                 Optional<Card> temp = cardRepository.findById(CardId.builder().setName(setName).setNumber(setNumber).build());
-                if (temp.isEmpty()){
+                if (temp.isEmpty()) {
                     cardRepository.save(card);
                 }
                 deckCardRepository.save(DeckCard.builder().deckCardId(DeckCardId.builder().deckId(deck.getId()).cardId(CardId.builder().setName(setName).setNumber(setNumber).build()).build()).quantity(Long.valueOf(quantity)).build());
+            }
+        }
+        return "Saved";
+    }
+
+    @PostMapping(path = "/chineseimport")
+    public String chineseDeckImport(@RequestBody DeckImport deckImport) {
+        log.info("卡组名称: {}", deckImport.getDeckName());
+        log.info("卡组代码: {}", deckImport.getDeckCode());
+        Deck deck = deckRepository.save(Deck.builder().deckName(deckImport.getDeckName()).build());
+        log.info("deckId:{}, deckName:{}", deck.getId(), deck.getDeckName());
+        for (String str : deckImport.getDeckCode().split("\n")) {
+            String cardName = "";
+            String quantity = "";
+            if (!str.isBlank()) {
+
+                // 创建匹配器
+                Matcher matcher = Pattern.compile("(\\d+) (.+?)").matcher(str);
+
+                if (matcher.find()) {
+                    quantity = matcher.group(1);
+                    cardName = matcher.group(2);
+                } else {
+                    log.info("没有匹配上 {}", str);
+                }
+                List<Card> nickNameList = cardRepository.findByNickNameAndRare(cardName, "1");
+                List<Card> chineseNameList = cardRepository.findByChineseNameAndRare(cardName, "1");
+                if (nickNameList.size() == 1) {
+                    CardId cardId = nickNameList.get(0).getCardId();
+                    deckCardRepository.save(DeckCard.builder().deckCardId(DeckCardId.builder().deckId(deck.getId()).cardId(cardId).build()).quantity(Long.valueOf(quantity)).build());
+                } else if (chineseNameList.size() == 1) {
+                    CardId cardId = chineseNameList.get(0).getCardId();
+                    deckCardRepository.save(DeckCard.builder().deckCardId(DeckCardId.builder().deckId(deck.getId()).cardId(cardId).build()).quantity(Long.valueOf(quantity)).build());
+                }
+
             }
         }
         return "Saved";

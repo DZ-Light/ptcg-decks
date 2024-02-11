@@ -11,4 +11,5 @@ import java.util.List;
 public interface CardRepository extends JpaRepository<Card, CardId> {
     Card findByCardId(CardId cardId);
     List<Card> findByNickNameAndRare(String name, String rare);
+    List<Card> findByChineseNameAndRare(String name, String rare);
 }

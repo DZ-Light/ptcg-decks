@@ -43,13 +43,14 @@
                     <label for="deckCode" class="form-label">卡组代码</label>
                     <textarea class="form-control" id="deckCode" rows="20"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" id="submitBtn">导入</button>
+                <button type="submit" class="btn btn-primary" id="submitEnglish">导入英文</button>
+                <button type="submit" class="btn btn-primary" id="submitChinese">导入简中</button>
             </form>
         </div>
     </div>
     <script>
         $(document).ready(function() {
-            $("#submitBtn").click(function(e) {
+            $("#submitEnglish").click(function(e) {
                 e.preventDefault();
 
                 const deckName = $("#deckName").val();
@@ -62,6 +63,30 @@
 
                 $.ajax({
                     url: "/deck/import", // 替换为你的API接口地址
+                    method: "POST",
+                    data: JSON.stringify(data),
+                    contentType: "application/json",
+                    success: function(response) {
+                        console.log("成功提交: ", response);
+                    },
+                    error: function(error) {
+                        console.error("提交失败: ", error);
+                    }
+                });
+            });
+            $("#submitChinese").click(function(e) {
+                e.preventDefault();
+
+                const deckName = $("#deckName").val();
+                const deckCode = $("#deckCode").val();
+
+                const data = {
+                    deckName: deckName,
+                    deckCode: deckCode
+                };
+
+                $.ajax({
+                    url: "/deck/chineseimport", // 替换为你的API接口地址
                     method: "POST",
                     data: JSON.stringify(data),
                     contentType: "application/json",
