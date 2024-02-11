@@ -38,10 +38,10 @@ class DeckExportCsvTest {
                 String cardName = card.getNickName();
                 if (card.getChineseName() != null && !card.getChineseName().isBlank()){
                     cardName = card.getChineseName();
-                    List<Card> rareCard = cardRepository.findByChineseNameAndRare(card.getChineseName(),"1");
-                    if (rareCard.size()==1){
-                        cardId = rareCard.get(0).getCardId();
-                    }
+                }
+                List<Card> rareCard = cardRepository.findByNickNameAndRare(card.getNickName(),"1");
+                if (rareCard.size()==1){
+                    cardId = rareCard.get(0).getCardId();
                 }
                 sb.append("\n").append(deckcard.getQuantity()).append(",").append(cardName).append(",").append(card.getType()).append(",").append("http://localhost:4000/src/img/en/").append(cardId.getSetName()).append("/").append(cardId.getSetName()).append("_").append(cardId.getSetNumber()).append("_R_EN.png");
             }

@@ -42,10 +42,10 @@ class DeckExportTxtTest {
                 String cardName = card.getNickName();
                 if (card.getChineseName() != null && !card.getChineseName().isBlank()) {
                     cardName = card.getChineseName();
-                    List<Card> rareCard = cardRepository.findByChineseNameAndRare(card.getChineseName(), "1");
-                    if (rareCard.size() == 1) {
-                        cardId = rareCard.get(0).getCardId();
-                    }
+                }
+                List<Card> rareCard = cardRepository.findByNickNameAndRare(card.getNickName(), "1");
+                if (rareCard.size() == 1) {
+                    cardId = rareCard.get(0).getCardId();
                 }
                 switch (card.getType()) {
                     case "Pokémon" ->
