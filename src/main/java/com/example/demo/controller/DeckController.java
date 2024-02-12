@@ -32,7 +32,7 @@ public class DeckController {
     DeckCardRepository deckCardRepository;
 
     @PostMapping(path = "/import")
-    public void deckImport(@RequestBody DeckImport deckImport) {
+    public String deckImport(@RequestBody DeckImport deckImport) {
         Deck deck = saveDeck(deckImport);
         String type = "";
         for (String str : deckImport.getDeckCode().split("\n")) {
@@ -68,7 +68,7 @@ public class DeckController {
                     quantity = regexWithOutSet.group(1);
                     cardName = regexWithOutSet.group(2);
                     CardId cardId = null;
-                    List<Card> nickNameList = cardRepository.findByNickNameAndRare(cardName, "1");
+                    List<Card> nickNameList = cardRepository.findByNickNameLikeAndRare("%" + cardName.replace(" ", "%") + "%", "1");
                     List<Card> chineseNameList = cardRepository.findByChineseNameAndRare(cardName, "1");
                     if (!nickNameList.isEmpty()) {
                         cardId = nickNameList.get(0).getCardId();
@@ -83,6 +83,7 @@ public class DeckController {
                 }
             }
         }
+        return "index";
     }
 
     private Deck saveDeck(DeckImport deckImport) {

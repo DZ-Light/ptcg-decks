@@ -4,6 +4,7 @@ import com.example.demo.entity.Deck;
 import com.example.demo.repository.DeckCardRepository;
 import com.example.demo.repository.DeckRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +17,7 @@ public class IndexController {
     DeckRepository deckRepository;
     @GetMapping("/")
     public String index(Model model) {
-        List<Deck> decks = deckRepository.findAll();
+        List<Deck> decks = deckRepository.findAll(Sort.by(Sort.Direction.ASC,"deckName"));
         model.addAttribute("decks", decks);
         return "index";
     }
