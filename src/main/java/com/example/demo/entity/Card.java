@@ -20,8 +20,6 @@ public class Card {
     private String nickName;
     private String chineseName;
     private String englishName;
-    private String japaneseName;
     private String type;
     private String rare;
-    private String zone;
 }

@@ -2,7 +2,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
+    show-sql: false
     open-in-view: true
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example

@@ -42,7 +42,7 @@ class DemoApplicationTests {
         CardId cardId = CardId.builder().setName(setName).setNumber(setNumber).build();
         Card card = cardRepository.findByCardId(cardId);
         if (card == null) {
-            cardRepository.save(Card.builder().cardId(cardId).nickName(nickName).chineseName(chineseName).englishName(englishName).japaneseName(japaneseName).type(type).rare(rare).zone(zone).build());
+            cardRepository.save(Card.builder().cardId(cardId).nickName(nickName).chineseName(chineseName).englishName(englishName).type(type).rare(rare).build());
         }
         deckCardRepository.save(DeckCard.builder().deckCardId(DeckCardId.builder().deckId(deckId).cardId(cardId).build()).quantity(quantity).build());
 
