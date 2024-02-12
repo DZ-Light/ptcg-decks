@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Sort;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -38,7 +39,7 @@ class DeckExportTxtTest {
             Long pokemonCount = 0L;
             Long trainerCount = 0L;
             Long energyCount = 0L;
-            List<DeckCard> deckCardList = deckCardRepository.findDeckCardByDeckCardId_DeckId(deck.getId());
+            List<DeckCard> deckCardList = deckCardRepository.findDeckCardByDeckCardId_DeckId(deck.getId(), Sort.by(Sort.Direction.DESC, "quantity"));
             for (DeckCard deckcard : deckCardList) {
                 CardId cardId = deckcard.getDeckCardId().getCardId();
                 Card card = cardRepository.findByCardId(cardId);
@@ -52,25 +53,25 @@ class DeckExportTxtTest {
                 }
                 switch (card.getType()) {
                     case "Pokémon" -> {
-                        pokemonCount+=deckcard.getQuantity();
+                        pokemonCount += deckcard.getQuantity();
                         pokemon.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
                     }
                     case "Trainer" -> {
-                        trainerCount+=deckcard.getQuantity();
+                        trainerCount += deckcard.getQuantity();
                         trainer.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
                     }
                     case "Energy" -> {
-                        energyCount+=deckcard.getQuantity();
+                        energyCount += deckcard.getQuantity();
                         energy.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
                     }
                 }
             }
-            energy.append("总计: ").append(pokemonCount+trainerCount+energyCount);
+            energy.append("总计: ").append(pokemonCount + trainerCount + energyCount);
             File file = new File("deck/" + deck.getDeckName());
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
-                pokemon.insert(9,pokemonCount);
-                trainer.insert(9,trainerCount);
-                energy.insert(8,energyCount);
+                pokemon.insert(9, pokemonCount);
+                trainer.insert(9, trainerCount);
+                energy.insert(8, energyCount);
                 // 将三个StringBuilder的内容按顺序写入文件
                 writer.write(pokemon.toString());
                 writer.write(trainer.toString());

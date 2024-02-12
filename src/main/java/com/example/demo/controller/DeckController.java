@@ -7,6 +7,7 @@ import com.example.demo.repository.DeckCardRepository;
 import com.example.demo.repository.DeckRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.BufferedWriter;
@@ -126,15 +127,15 @@ public class DeckController {
      * @return
      */
     private String matchForEnergy(String string) {
-        string = Pattern.compile("(\\d+) Fire Energy (\\d+)").matcher(string).replaceAll("$1 基本火能量 BUS 167");
+        string = Pattern.compile("(\\d+) Fire Energy (\\d+)").matcher(string).replaceAll("$1 基本火能量 OBF 230");
         string = Pattern.compile("(\\d+) Darkness Energy (\\d+)").matcher(string).replaceAll("$1 基本恶能量 BUS 168");
         string = Pattern.compile("(\\d+) Fairy Energy (\\d+)").matcher(string).replaceAll("$1 基本妖能量 BUS 169");
-        string = Pattern.compile("(\\d+) Grass Energy (\\d+)").matcher(string).replaceAll("$1 基本草能量 GRI 167");
-        string = Pattern.compile("(\\d+) Lightning Energy (\\d+)").matcher(string).replaceAll("$1 基本雷能量 GRI 168");
-        string = Pattern.compile("(\\d+) Fighting Energy (\\d+)").matcher(string).replaceAll("$1 基本斗能量 GRI 169");
-        string = Pattern.compile("(\\d+) Psychic Energy (\\d+)").matcher(string).replaceAll("$1 基本超能量 SUM 162");
+        string = Pattern.compile("(\\d+) Grass Energy (\\d+)").matcher(string).replaceAll("$1 基本草能量 PAL 278");
+        string = Pattern.compile("(\\d+) Lightning Energy (\\d+)").matcher(string).replaceAll("$1 基本雷能量 SVI 257");
+        string = Pattern.compile("(\\d+) Fighting Energy (\\d+)").matcher(string).replaceAll("$1 基本斗能量 SVI 258");
+        string = Pattern.compile("(\\d+) Psychic Energy (\\d+)").matcher(string).replaceAll("$1 基本超能量 MEW 207");
         string = Pattern.compile("(\\d+) Metal Energy (\\d+)").matcher(string).replaceAll("$1 基本钢能量 SUM 163");
-        string = Pattern.compile("(\\d+) Water Energy (\\d+)").matcher(string).replaceAll("$1 基本水能量 CIN 124");
+        string = Pattern.compile("(\\d+) Water Energy (\\d+)").matcher(string).replaceAll("$1 基本水能量 SVI 258");
         return string;
     }
 
@@ -150,7 +151,7 @@ public class DeckController {
         Long energyCount = 0L;
         Optional<Deck> deck = deckRepository.findById(Long.valueOf(deckId));
         if (deck.isPresent()) {
-            List<DeckCard> deckCardList = deckCardRepository.findDeckCardByDeckCardId_DeckId(Long.valueOf(deckId));
+            List<DeckCard> deckCardList = deckCardRepository.findDeckCardByDeckCardId_DeckId(Long.valueOf(deckId), Sort.by(Sort.Direction.DESC, "quantity"));
             for (DeckCard deckcard : deckCardList) {
                 CardId cardId = deckcard.getDeckCardId().getCardId();
                 Card card = cardRepository.findByCardId(cardId);
