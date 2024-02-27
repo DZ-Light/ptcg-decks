@@ -87,6 +87,63 @@ public class DeckController {
         return "index";
     }
 
+    @PostMapping("/findCardById")
+    public Map<String, String> findCardById(@RequestBody DeckImport deckImport) {
+        String deckId = deckImport.getDeckId();
+        Map<String, String> result = new HashMap<>();
+        StringBuilder pokemon = new StringBuilder("Pokémon ()").append("\n");
+        StringBuilder trainer = new StringBuilder("Trainer ()").append("\n");
+        StringBuilder energy = new StringBuilder("Energy ()").append("\n");
+        Long pokemonCount = 0L;
+        Long trainerCount = 0L;
+        Long energyCount = 0L;
+        Optional<Deck> deck = deckRepository.findById(Long.valueOf(deckId));
+        if (deck.isPresent()) {
+            List<DeckCard> deckCardList = deckCardRepository.findDeckCardByDeckCardId_DeckId(Long.valueOf(deckId), Sort.by(Sort.Direction.DESC, "quantity"));
+            for (DeckCard deckcard : deckCardList) {
+                CardId cardId = deckcard.getDeckCardId().getCardId();
+                Card card = cardRepository.findByCardId(cardId);
+                String cardName = card.getNickName();
+                if (card.getChineseName() != null && !card.getChineseName().isBlank()) {
+                    cardName = card.getChineseName();
+                }
+                List<Card> rareCard = cardRepository.findByNickNameAndRare(card.getNickName(), "1");
+                if (!rareCard.isEmpty()) {
+                    cardId = rareCard.get(0).getCardId();
+                } else {
+                    List<Card> commonCard = cardRepository.findByNickNameAndRare(card.getNickName(), "0");
+                    cardId = commonCard.get(0).getCardId();
+                }
+                switch (card.getType()) {
+                    case "Pokémon" -> {
+                        pokemonCount += deckcard.getQuantity();
+                        pokemon.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
+                    }
+                    case "Trainer" -> {
+                        trainerCount += deckcard.getQuantity();
+                        trainer.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
+                    }
+                    case "Energy" -> {
+                        energyCount += deckcard.getQuantity();
+                        energy.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
+                    }
+                    default -> log.info("卡牌未设置分类: {}", cardId);
+                }
+            }
+            energy.append("总计: ").append(pokemonCount + trainerCount + energyCount);
+            pokemon.insert(9, pokemonCount);
+            trainer.insert(9, trainerCount);
+            energy.insert(8, energyCount);
+            // 将三个StringBuilder的内容按顺序写入文件
+            String sb = String.valueOf(pokemon) + trainer + energy;
+            // 创建返回的Map
+            result.put("deckId", deckId);
+            result.put("deckName", deck.get().getDeckName());
+            result.put("deckCode", sb);
+        }
+        return result;
+    }
+
     private Deck saveDeck(DeckImport deckImport) {
         log.info("DeckImport: {}", deckImport);
         Deck deck;
@@ -139,57 +196,5 @@ public class DeckController {
         return string;
     }
 
-    @PostMapping("/findCardById")
-    public Map<String, String> findCardById(@RequestBody DeckImport deckImport) {
-        String deckId = deckImport.getDeckId();
-        Map<String, String> result = new HashMap<>();
-        StringBuilder pokemon = new StringBuilder("Pokémon ()").append("\n");
-        StringBuilder trainer = new StringBuilder("Trainer ()").append("\n");
-        StringBuilder energy = new StringBuilder("Energy ()").append("\n");
-        Long pokemonCount = 0L;
-        Long trainerCount = 0L;
-        Long energyCount = 0L;
-        Optional<Deck> deck = deckRepository.findById(Long.valueOf(deckId));
-        if (deck.isPresent()) {
-            List<DeckCard> deckCardList = deckCardRepository.findDeckCardByDeckCardId_DeckId(Long.valueOf(deckId), Sort.by(Sort.Direction.DESC, "quantity"));
-            for (DeckCard deckcard : deckCardList) {
-                CardId cardId = deckcard.getDeckCardId().getCardId();
-                Card card = cardRepository.findByCardId(cardId);
-                String cardName = card.getNickName();
-                if (card.getChineseName() != null && !card.getChineseName().isBlank()) {
-                    cardName = card.getChineseName();
-                }
-                List<Card> rareCard = cardRepository.findByNickNameAndRare(card.getNickName(), "1");
-                if (rareCard.size() == 1) {
-                    cardId = rareCard.get(0).getCardId();
-                }
-                switch (card.getType()) {
-                    case "Pokémon" -> {
-                        pokemonCount += deckcard.getQuantity();
-                        pokemon.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
-                    }
-                    case "Trainer" -> {
-                        trainerCount += deckcard.getQuantity();
-                        trainer.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
-                    }
-                    case "Energy" -> {
-                        energyCount += deckcard.getQuantity();
-                        energy.append(deckcard.getQuantity()).append(" ").append(cardName).append(" ").append(cardId.getSetName()).append(" ").append(cardId.getSetNumber()).append("\n");
-                    }
-                    default -> log.info("卡牌未设置分类: {}", cardId);
-                }
-            }
-            energy.append("总计: ").append(pokemonCount + trainerCount + energyCount);
-            pokemon.insert(9, pokemonCount);
-            trainer.insert(9, trainerCount);
-            energy.insert(8, energyCount);
-            // 将三个StringBuilder的内容按顺序写入文件
-            String sb = String.valueOf(pokemon) + trainer + energy;
-            // 创建返回的Map
-            result.put("deckId", deckId);
-            result.put("deckName", deck.get().getDeckName());
-            result.put("deckCode", sb);
-        }
-        return result;
-    }
+
 }
