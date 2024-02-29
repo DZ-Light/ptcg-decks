@@ -8,6 +8,8 @@ import com.example.demo.repository.DeckRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.BufferedWriter;
@@ -33,8 +35,11 @@ public class DeckController {
     DeckCardRepository deckCardRepository;
 
     @PostMapping(path = "/import")
-    public String deckImport(@RequestBody DeckImport deckImport) {
+    public ResponseEntity<String> deckImport(@RequestBody DeckImport deckImport) {
         Deck deck = saveDeck(deckImport);
+        if (deck == null) {
+            return new ResponseEntity<>("", HttpStatus.OK);
+        }
         String type = "";
         for (String str : deckImport.getDeckCode().split("\n")) {
             String setName = "";
@@ -68,14 +73,7 @@ public class DeckController {
                 } else if (regexWithOutSet.matches()) {
                     quantity = regexWithOutSet.group(1);
                     cardName = regexWithOutSet.group(2);
-                    CardId cardId = null;
-                    List<Card> nickNameList = cardRepository.findByNickNameLikeAndRare("%" + cardName.replace(" ", "%") + "%", "1");
-                    List<Card> chineseNameList = cardRepository.findByChineseNameAndRare(cardName, "1");
-                    if (!nickNameList.isEmpty()) {
-                        cardId = nickNameList.get(0).getCardId();
-                    } else if (!chineseNameList.isEmpty()) {
-                        cardId = chineseNameList.get(0).getCardId();
-                    }
+                    CardId cardId = getCardId(cardName);
                     if (cardId != null) {
                         deckCardRepository.save(DeckCard.builder().deckCardId(DeckCardId.builder().deckId(deck.getId()).cardId(cardId).build()).quantity(Long.valueOf(quantity)).build());
                     } else {
@@ -84,7 +82,7 @@ public class DeckController {
                 }
             }
         }
-        return "index";
+        return new ResponseEntity<>(String.valueOf(deck.getId()), HttpStatus.OK);
     }
 
     @PostMapping("/findCardById")
@@ -144,17 +142,45 @@ public class DeckController {
         return result;
     }
 
+    private CardId getCardId(String cardName) {
+        List<Card> cards = cardRepository.findByNickNameLikeAndRare("%" + cardName.replace(" ", "%") + "%", "1");
+        if (cards.size() == 1) {
+            return cards.get(0).getCardId();
+        } else {
+            log.info("{} 模糊查找稀有版本 发现{}条", cardName, cards.size());
+        }
+        cards = cardRepository.findByNickNameLikeAndRare("%" + cardName.replace(" ", "%") + "%", "0");
+        if (cards.size() == 1) {
+            return cards.get(0).getCardId();
+        } else {
+            log.info("{} 模糊查找普通版本 发现{}条", cardName, cards.size());
+        }
+        cards = cardRepository.findByChineseNameAndRare(cardName, "1");
+        if (cards.size() == 1) {
+            return cards.get(0).getCardId();
+        } else {
+            log.info("{} 精确查找稀有版本 发现{}条", cardName, cards.size());
+        }
+        cards = cardRepository.findByChineseNameAndRare(cardName, "0");
+        if (cards.size() == 1) {
+            return cards.get(0).getCardId();
+        } else {
+            log.info("{} 精确查找普通版本 发现{}条", cardName, cards.size());
+        }
+        return null;
+    }
+
     private Deck saveDeck(DeckImport deckImport) {
         log.info("DeckImport: {}", deckImport);
-        Deck deck;
-        if (deckImport.getDeckId().isBlank()) {
-            deck = Deck.builder().deckName(deckImport.getDeckName()).build();
-        } else {
-            deck = Deck.builder().id(Long.valueOf(deckImport.getDeckId())).deckName(deckImport.getDeckName()).build();
+        if (!deckImport.getDeckId().isBlank()) {
+            deckRepository.deleteById(Long.valueOf(deckImport.getDeckId()));
             int i = deckCardRepository.deleteAllByDeckId(Long.valueOf(deckImport.getDeckId()));
             log.info("删除了{}条数据", i);
         }
-        deck = deckRepository.save(deck);
+        if (deckImport.getDeckCode().isBlank()) {
+            return null;
+        }
+        Deck deck = deckRepository.save(Deck.builder().deckName(deckImport.getDeckName()).build());
         log.info("Deck: {}", deck);
         return deck;
     }
