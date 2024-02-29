@@ -6,16 +6,14 @@ import com.example.demo.repository.CardRepository;
 import com.example.demo.repository.DeckCardRepository;
 import com.example.demo.repository.DeckRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,12 +25,15 @@ import java.util.regex.Pattern;
 @RestController
 @RequestMapping("/deck")
 public class DeckController {
-    @Autowired
-    CardRepository cardRepository;
-    @Autowired
-    DeckRepository deckRepository;
-    @Autowired
-    DeckCardRepository deckCardRepository;
+    final CardRepository cardRepository;
+    final DeckRepository deckRepository;
+    final DeckCardRepository deckCardRepository;
+
+    public DeckController(CardRepository cardRepository, DeckRepository deckRepository, DeckCardRepository deckCardRepository) {
+        this.cardRepository = cardRepository;
+        this.deckRepository = deckRepository;
+        this.deckCardRepository = deckCardRepository;
+    }
 
     @PostMapping(path = "/import")
     public ResponseEntity<String> deckImport(@RequestBody DeckImport deckImport) {
@@ -42,10 +43,10 @@ public class DeckController {
         }
         String type = "";
         for (String str : deckImport.getDeckCode().split("\n")) {
-            String setName = "";
-            String setNumber = "";
-            String cardName = "";
-            String quantity = "";
+            String setName;
+            String setNumber;
+            String cardName;
+            String quantity;
             if (Pattern.compile("Pokémon.*", Pattern.CANON_EQ).matcher(str).matches()) type = "Pokémon";
             else if (Pattern.compile("Trainer.*").matcher(str).matches()) type = "Trainer";
             else if (Pattern.compile("Energy.*").matcher(str).matches()) type = "Energy";
@@ -149,6 +150,12 @@ public class DeckController {
         } else {
             log.info("{} 模糊查找稀有版本 发现{}条", cardName, cards.size());
         }
+        cards = cardRepository.findByNickNameLikeAndRare("%" + cardName.replace(" ", "%"), "1");
+        if (cards.size() == 1) {
+            return cards.get(0).getCardId();
+        } else {
+            log.info("{} 模糊查找稀有版本 发现{}条", cardName, cards.size());
+        }
         cards = cardRepository.findByNickNameLikeAndRare("%" + cardName.replace(" ", "%") + "%", "0");
         if (cards.size() == 1) {
             return cards.get(0).getCardId();
@@ -162,10 +169,10 @@ public class DeckController {
             log.info("{} 精确查找稀有版本 发现{}条", cardName, cards.size());
         }
         cards = cardRepository.findByChineseNameAndRare(cardName, "0");
-        if (cards.size() == 1) {
+        if (!cards.isEmpty()) {
             return cards.get(0).getCardId();
         } else {
-            log.info("{} 精确查找普通版本 发现{}条", cardName, cards.size());
+            log.info("{} 精确查找普通版本 发现{}条", cardName, 0);
         }
         return null;
     }
@@ -189,8 +196,8 @@ public class DeckController {
     /**
      * 适配PTCG live的特殊格式
      *
-     * @param string
-     * @return
+     * @param string 匹配到到的特殊格式
+     * @return 修改后的格式
      */
     private String matchForPTCGLive(String string) {
         string = Pattern.compile("(?!PR-)(\\w{2,3})-(\\w{2,3}) (\\d+)").matcher(string).replaceAll("$1 $2$3");
@@ -206,8 +213,8 @@ public class DeckController {
     /**
      * 适配limitlesstcg的能量
      *
-     * @param string
-     * @return
+     * @param string 匹配到到的能量
+     * @return 修改后的格式
      */
     private String matchForEnergy(String string) {
         string = Pattern.compile("(\\d+) Fire Energy (\\d+)").matcher(string).replaceAll("$1 基本火能量 OBF 230");
