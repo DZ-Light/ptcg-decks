@@ -1,0 +1,34 @@
+Pokémon: 7
+1 Marshadow UNB 81 PH
+1 Latias CRZ-GG 20
+3 Mew VMAX FST 269
+1 Mew SMALT 152
+1 Meloetta FST 124 PH
+4 Genesect V FST 255
+4 Mew V FST 251
+
+Trainer: 17
+2 Boss's Orders RCL 189
+1 Rose Tower DAA 169 PH
+2 Battle VIP Pass FST 225 PH
+2 Escape Rope BUS 163
+4 Cram-o-matic FST 229 PH
+2 Fog Crystal CRE 227
+2 Elesa's Sparkle FST 260
+2 Switch MEW 206
+1 Path to the Peak ASR 213
+1 Marnie PR-SW 121
+2 Peony CRE 197
+3 Ultra Ball BRS 186
+4 Power Tablet FST 281
+4 Quick Ball SSH 216
+2 Reset Stamp UNM 253
+1 Vitality Band SVI 197
+1 Chaotic Swell CEC 187 PH
+
+Energy: 3
+3 Weakness Guard Energy UNM 258
+2 Basic {P} Energy MEW 207
+4 Fusion Strike Energy FST 244 PH
+
+Total Cards: 60

@@ -67,6 +67,8 @@ public class DeckController {
                     Card card = Card.builder().cardId(CardId.builder().setName(setName).setNumber(setNumber).build()).nickName(cardName).type(type).build();
                     Optional<Card> temp = cardRepository.findById(CardId.builder().setName(setName).setNumber(setNumber).build());
                     if (temp.isEmpty()) {
+                        card.setRare("0");
+                        card.setEnglishName(cardName);
                         cardRepository.save(card);
                     }
                     deckCardRepository.save(DeckCard.builder().deckCardId(DeckCardId.builder().deckId(deck.getId()).cardId(CardId.builder().setName(setName).setNumber(setNumber).build()).build()).quantity(Long.valueOf(quantity)).build());
