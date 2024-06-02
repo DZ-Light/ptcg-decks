@@ -34,6 +34,11 @@
   "mark" : "CSM2DC",
   "number" : "294"
 }, {
+  "name" : "熔接工",
+  "type" : "Trainer",
+  "mark" : "CSM2DC",
+  "number" : "329"
+}, {
   "name" : "格斗道场",
   "type" : "Trainer",
   "mark" : "CSM2DC",

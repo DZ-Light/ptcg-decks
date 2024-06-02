@@ -9,6 +9,11 @@
   "mark" : "CS1.5C",
   "number" : "046"
 }, {
+  "name" : "高温【火】能量",
+  "type" : "Energy",
+  "mark" : "CS1.5C",
+  "number" : "052"
+}, {
   "name" : "捕获能量",
   "type" : "Energy",
   "mark" : "CS1.5C",

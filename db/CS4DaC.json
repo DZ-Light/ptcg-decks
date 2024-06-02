@@ -1,8 +1,18 @@
 [ {
+  "name" : "炎帝V",
+  "type" : "Pokémon",
+  "mark" : "CS4DaC",
+  "number" : "056"
+}, {
   "name" : "雷公V",
   "type" : "Pokémon",
   "mark" : "CS4DaC",
   "number" : "137"
+}, {
+  "name" : "藏玛然特V",
+  "type" : "Pokémon",
+  "mark" : "CS4DaC",
+  "number" : "313"
 }, {
   "name" : "能量回收",
   "type" : "Trainer",

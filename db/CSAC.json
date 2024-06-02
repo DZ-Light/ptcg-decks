@@ -44,10 +44,20 @@
   "mark" : "CSAC",
   "number" : "FIG"
 }, {
+  "name" : "基本火能量",
+  "type" : "Energy",
+  "mark" : "CSAC",
+  "number" : "FIR"
+}, {
   "name" : "基本雷能量",
   "type" : "Energy",
   "mark" : "CSAC",
   "number" : "LIG"
+}, {
+  "name" : "基本钢能量",
+  "type" : "Energy",
+  "mark" : "CSAC",
+  "number" : "MET"
 }, {
   "name" : "基本超能量",
   "type" : "Energy",
