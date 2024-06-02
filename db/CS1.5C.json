@@ -1,0 +1,16 @@
+[ {
+  "name" : "回收网",
+  "type" : "Trainer",
+  "mark" : "CS1.5C",
+  "number" : "043"
+}, {
+  "name" : "足量水桶",
+  "type" : "Trainer",
+  "mark" : "CS1.5C",
+  "number" : "046"
+}, {
+  "name" : "捕获能量",
+  "type" : "Energy",
+  "mark" : "CS1.5C",
+  "number" : "055"
+} ]

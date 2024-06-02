@@ -1,0 +1,41 @@
+[ {
+  "name" : "泪眼蜥",
+  "type" : "Pokémon",
+  "mark" : "CS3.5C",
+  "number" : "023"
+}, {
+  "name" : "千面避役",
+  "type" : "Pokémon",
+  "mark" : "CS3.5C",
+  "number" : "025"
+}, {
+  "name" : "山谷回声喇叭",
+  "type" : "Trainer",
+  "mark" : "CS3.5C",
+  "number" : "057"
+}, {
+  "name" : "道具妨碍器",
+  "type" : "Trainer",
+  "mark" : "CS3.5C",
+  "number" : "059"
+}, {
+  "name" : "克拉拉",
+  "type" : "Trainer",
+  "mark" : "CS3.5C",
+  "number" : "060"
+}, {
+  "name" : "赛宝利",
+  "type" : "Trainer",
+  "mark" : "CS3.5C",
+  "number" : "061"
+}, {
+  "name" : "皮欧尼",
+  "type" : "Trainer",
+  "mark" : "CS3.5C",
+  "number" : "062"
+}, {
+  "name" : "通顶雪道",
+  "type" : "Trainer",
+  "mark" : "CS3.5C",
+  "number" : "063"
+} ]

@@ -1,0 +1,36 @@
+[ {
+  "name" : "梦幻V",
+  "type" : "Pokémon",
+  "mark" : "CS4bC",
+  "number" : "048"
+}, {
+  "name" : "梦幻VMAX",
+  "type" : "Pokémon",
+  "mark" : "CS4bC",
+  "number" : "049"
+}, {
+  "name" : "盖诺赛克特V",
+  "type" : "Pokémon",
+  "mark" : "CS4bC",
+  "number" : "085"
+}, {
+  "name" : "强力糖锭",
+  "type" : "Trainer",
+  "mark" : "CS4bC",
+  "number" : "118"
+}, {
+  "name" : "消灾手套",
+  "type" : "Trainer",
+  "mark" : "CS4bC",
+  "number" : "119"
+}, {
+  "name" : "小菊儿的璀璨",
+  "type" : "Trainer",
+  "mark" : "CS4bC",
+  "number" : "124"
+}, {
+  "name" : "汇流能量",
+  "type" : "Energy",
+  "mark" : "CS4bC",
+  "number" : "132"
+} ]

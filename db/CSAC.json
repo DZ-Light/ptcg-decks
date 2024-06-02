@@ -1,0 +1,61 @@
+[ {
+  "name" : "先机球",
+  "type" : "Trainer",
+  "mark" : "CSAC",
+  "number" : "010"
+}, {
+  "name" : "进化熏香",
+  "type" : "Trainer",
+  "mark" : "CSAC",
+  "number" : "011"
+}, {
+  "name" : "普通钓竿",
+  "type" : "Trainer",
+  "mark" : "CSAC",
+  "number" : "014"
+}, {
+  "name" : "气球",
+  "type" : "Trainer",
+  "mark" : "CSAC",
+  "number" : "017"
+}, {
+  "name" : "索妮亚",
+  "type" : "Trainer",
+  "mark" : "CSAC",
+  "number" : "018"
+}, {
+  "name" : "玛俐",
+  "type" : "Trainer",
+  "mark" : "CSAC",
+  "number" : "022"
+}, {
+  "name" : "训练场地",
+  "type" : "Trainer",
+  "mark" : "CSAC",
+  "number" : "023"
+}, {
+  "name" : "基本恶能量",
+  "type" : "Energy",
+  "mark" : "CSAC",
+  "number" : "DAR"
+}, {
+  "name" : "基本斗能量",
+  "type" : "Energy",
+  "mark" : "CSAC",
+  "number" : "FIG"
+}, {
+  "name" : "基本雷能量",
+  "type" : "Energy",
+  "mark" : "CSAC",
+  "number" : "LIG"
+}, {
+  "name" : "基本超能量",
+  "type" : "Energy",
+  "mark" : "CSAC",
+  "number" : "PSY"
+}, {
+  "name" : "基本水能量",
+  "type" : "Energy",
+  "mark" : "CSAC",
+  "number" : "WAT"
+} ]

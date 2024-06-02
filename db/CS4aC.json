@@ -1,0 +1,21 @@
+[ {
+  "name" : "锹农炮虫",
+  "type" : "Pokémon",
+  "mark" : "CS4aC",
+  "number" : "054"
+}, {
+  "name" : "伽勒尔 火焰鸟",
+  "type" : "Pokémon",
+  "mark" : "CS4aC",
+  "number" : "083"
+}, {
+  "name" : "救援行李箱",
+  "type" : "Trainer",
+  "mark" : "CS4aC",
+  "number" : "120"
+}, {
+  "name" : "奇巴纳",
+  "type" : "Trainer",
+  "mark" : "CS4aC",
+  "number" : "125"
+} ]

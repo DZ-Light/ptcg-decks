@@ -1,0 +1,41 @@
+[ {
+  "name" : "强颚鸡母虫",
+  "type" : "Pokémon",
+  "mark" : "CSM2DC",
+  "number" : "025"
+}, {
+  "name" : "咚咚鼠GX",
+  "type" : "Pokémon",
+  "mark" : "CSM2DC",
+  "number" : "102"
+}, {
+  "name" : "虫电宝",
+  "type" : "Pokémon",
+  "mark" : "CSM2DC",
+  "number" : "103"
+}, {
+  "name" : "宝可梦通信",
+  "type" : "Trainer",
+  "mark" : "CSM2DC",
+  "number" : "265"
+}, {
+  "name" : "重置印章",
+  "type" : "Trainer",
+  "mark" : "CSM2DC",
+  "number" : "271"
+}, {
+  "name" : "回转滑板",
+  "type" : "Trainer",
+  "mark" : "CSM2DC",
+  "number" : "289"
+}, {
+  "name" : "莉佳的款待",
+  "type" : "Trainer",
+  "mark" : "CSM2DC",
+  "number" : "294"
+}, {
+  "name" : "格斗道场",
+  "type" : "Trainer",
+  "mark" : "CSM2DC",
+  "number" : "335"
+} ]

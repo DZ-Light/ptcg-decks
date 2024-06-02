@@ -1,0 +1,36 @@
+[ {
+  "name" : "花舞鸟",
+  "type" : "Pokémon",
+  "mark" : "CS4.5C",
+  "number" : "004"
+}, {
+  "name" : "水君V",
+  "type" : "Pokémon",
+  "mark" : "CS4.5C",
+  "number" : "008"
+}, {
+  "name" : "伽勒尔 急冻鸟",
+  "type" : "Pokémon",
+  "mark" : "CS4.5C",
+  "number" : "021"
+}, {
+  "name" : "美洛耶塔",
+  "type" : "Pokémon",
+  "mark" : "CS4.5C",
+  "number" : "023"
+}, {
+  "name" : "机器鹕",
+  "type" : "Trainer",
+  "mark" : "CS4.5C",
+  "number" : "048"
+}, {
+  "name" : "交错切换机",
+  "type" : "Trainer",
+  "mark" : "CS4.5C",
+  "number" : "049"
+}, {
+  "name" : "对战会员通行证",
+  "type" : "Trainer",
+  "mark" : "CS4.5C",
+  "number" : "052"
+} ]

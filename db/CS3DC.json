@@ -1,0 +1,31 @@
+[ {
+  "name" : "黑马蕾冠王V",
+  "type" : "Pokémon",
+  "mark" : "CS3DC",
+  "number" : "073"
+}, {
+  "name" : "离洞绳",
+  "type" : "Trainer",
+  "mark" : "CS3DC",
+  "number" : "127"
+}, {
+  "name" : "雾之水晶",
+  "type" : "Trainer",
+  "mark" : "CS3DC",
+  "number" : "132"
+}, {
+  "name" : "希巴",
+  "type" : "Trainer",
+  "mark" : "CS3DC",
+  "number" : "153"
+}, {
+  "name" : "裁判",
+  "type" : "Trainer",
+  "mark" : "CS3DC",
+  "number" : "154"
+}, {
+  "name" : "美蓉",
+  "type" : "Trainer",
+  "mark" : "CS3DC",
+  "number" : "165"
+} ]

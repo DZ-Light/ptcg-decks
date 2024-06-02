@@ -1,0 +1,51 @@
+[ {
+  "name" : "雷公V",
+  "type" : "Pokémon",
+  "mark" : "CS4DaC",
+  "number" : "137"
+}, {
+  "name" : "能量回收",
+  "type" : "Trainer",
+  "mark" : "CS4DaC",
+  "number" : "365"
+}, {
+  "name" : "能量转移",
+  "type" : "Trainer",
+  "mark" : "CS4DaC",
+  "number" : "366"
+}, {
+  "name" : "能量输送",
+  "type" : "Trainer",
+  "mark" : "CS4DaC",
+  "number" : "367"
+}, {
+  "name" : "粉碎之锤",
+  "type" : "Trainer",
+  "mark" : "CS4DaC",
+  "number" : "372"
+}, {
+  "name" : "高级球",
+  "type" : "Trainer",
+  "mark" : "CS4DaC",
+  "number" : "375"
+}, {
+  "name" : "神奇糖果",
+  "type" : "Trainer",
+  "mark" : "CS4DaC",
+  "number" : "376"
+}, {
+  "name" : "宝可梦交替",
+  "type" : "Trainer",
+  "mark" : "CS4DaC",
+  "number" : "377"
+}, {
+  "name" : "博士的研究",
+  "type" : "Trainer",
+  "mark" : "CS4DaC",
+  "number" : "403"
+}, {
+  "name" : "老大的指令",
+  "type" : "Trainer",
+  "mark" : "CS4DaC",
+  "number" : "406"
+} ]
