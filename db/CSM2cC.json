@@ -1,4 +1,9 @@
 [ {
+  "name" : "恶食大王",
+  "type" : "Pokémon",
+  "mark" : "CSM2cC",
+  "number" : "070"
+}, {
   "name" : "巨大炉灶",
   "type" : "Trainer",
   "mark" : "CSM2cC",
