@@ -1,72 +1,105 @@
-[
-  {
-    "name": "汇流梦幻",
-    "usageRates": 0.2853,
-    "winRates": {}
-  },
-  {
-    "name": "炮虫",
-    "usageRates": 0.0705,
-    "winRates": {}
-  },
-  {
-    "name": "白马",
-    "usageRates": 0.0831,
-    "winRates": {}
-  },
-  {
-    "name": "黑马",
-    "usageRates": 0.0831,
-    "winRates": {}
-  },
-  {
-    "name": "三神",
-    "usageRates": 0.0627,
-    "winRates": {}
-  },
-  {
-    "name": "铝钢龙",
-    "usageRates": 0.0486,
-    "winRates": {}
-  },
-  {
-    "name": "连击熊",
-    "usageRates": 0.0705,
-    "winRates": {}
-  },
-  {
-    "name": "无极",
-    "usageRates": 0.0596,
-    "winRates": {}
-  },
-  {
-    "name": "耿鬼",
-    "usageRates": 0.0392,
-    "winRates": {}
-  },
-  {
-    "name": "钢TT",
-    "usageRates": 0.0235,
-    "winRates": {}
-  },
-  {
-    "name": "鸣鸣",
-    "usageRates": 0.0361,
-    "winRates": {}
-  },
-  {
-    "name": "乌贼王",
-    "usageRates": 0.0204,
-    "winRates": {}
-  },
-  {
-    "name": "火焰鸟",
-    "usageRates": 0.0251,
-    "winRates": {}
-  },
-  {
-    "name": "雷伊布",
-    "usageRates": 0.0188,
-    "winRates": {}
+[ {
+  "name" : "汇流梦幻",
+  "usageRates" : 0.2853,
+  "winRates" : {
+    "白马" : 0.1
   }
-]
+}, {
+  "name" : "炮虫",
+  "usageRates" : 0.0705,
+  "winRates" : { }
+}, {
+  "name" : "白马",
+  "usageRates" : 0.0831,
+  "winRates" : {
+    "汇流梦幻" : 0.7
+  }
+}, {
+  "name" : "黑马",
+  "usageRates" : 0.0831,
+  "winRates" : { }
+}, {
+  "name" : "三神",
+  "usageRates" : 0.0627,
+  "winRates" : { }
+}, {
+  "name" : "连击熊",
+  "usageRates" : 0.0705,
+  "winRates" : { }
+}, {
+  "name" : "铝钢龙",
+  "usageRates" : 0.0486,
+  "winRates" : { }
+}, {
+  "name" : "无极",
+  "usageRates" : 0.0596,
+  "winRates" : { }
+}, {
+  "name" : "耿鬼",
+  "usageRates" : 0.0392,
+  "winRates" : { }
+}, {
+  "name" : "钢TT",
+  "usageRates" : 0.0235,
+  "winRates" : { }
+}, {
+  "name" : "鸣鸣",
+  "usageRates" : 0.0361,
+  "winRates" : { }
+}, {
+  "name" : "乌贼王",
+  "usageRates" : 0.0204,
+  "winRates" : { }
+}, {
+  "name" : "火焰鸟",
+  "usageRates" : 0.0251,
+  "winRates" : { }
+}, {
+  "name" : "雷伊布",
+  "usageRates" : 0.0188,
+  "winRates" : { }
+}, {
+  "name" : "叉字蝠",
+  "usageRates" : 0.0031,
+  "winRates" : { }
+}, {
+  "name" : "铁蚁",
+  "usageRates" : 0.0078,
+  "winRates" : { }
+}, {
+  "name" : "炎帝",
+  "usageRates" : 0.0094,
+  "winRates" : { }
+}, {
+  "name" : "邪恶充能",
+  "usageRates" : 0.0078,
+  "winRates" : { }
+}, {
+  "name" : "幸福蛋",
+  "usageRates" : 0.0047,
+  "winRates" : { }
+}, {
+  "name" : "仙子伊布",
+  "usageRates" : 0.0063,
+  "winRates" : { }
+}, {
+  "name" : "巨金怪",
+  "usageRates" : 0.0047,
+  "winRates" : { }
+}, {
+  "name" : "玛狃拉",
+  "usageRates" : 0.0047,
+  "winRates" : { }
+}, {
+  "name" : "叶伊布",
+  "usageRates" : 0.0016,
+  "winRates" : { }
+}, {
+  "name" : "巨石丁",
+  "usageRates" : 0.0031,
+  "winRates" : { }
+}, {
+  "name" : "巨石丁",
+  "usageRates" : 0.0031,
+  "winRates" : { }
+}]

@@ -7,14 +7,18 @@ import java.util.List;
 
 @Data
 public class Player {
-    Deck deck;
-    int id;
-    int score;
-    List<Player> opponent;
-    public Player(int id, Deck deck, int score){
+    private String deck;
+    private String id;
+    private int score;
+    private int subScore;
+    private List<String> opponent;
+    private List<String> battleLog;
+    public Player(String id, String deck, int score){
         this.id = id;
         this.deck = deck;
         this.score = score;
         this.opponent = new ArrayList<>();
+        this.battleLog = new ArrayList<>();
     }
+
 }

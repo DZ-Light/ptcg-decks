@@ -35,6 +35,28 @@ public class DeckDatabase {
         decks.add(deck);
         writeAll(decks);
     }
+    public void updateWinRates(String deck1,String deck2,Float winRate1,Float winRate2){
+        int count = 0;
+        for (Deck d:decks){
+            if (d.getName().equals(deck1)){
+                Map<String, Float> winRates = d.getWinRates();
+                winRates.put(deck2,winRate1);
+                d.setWinRates(winRates);
+                count++;
+            }
+            if (d.getName().equals(deck2)){
+                Map<String, Float> winRates = d.getWinRates();
+                winRates.put(deck1,winRate2);
+                d.setWinRates(winRates);
+                count++;
+            }
+            if (count==2){
+                writeAll(decks);
+                return;
+            }
+        }
+
+    }
     public void writeAll(List<Deck> decks){
         try {
             objectMapper.writeValue(new File("deck.json"),decks);
