@@ -7,11 +7,11 @@ import java.util.List;
 
 @Data
 public class Player {
-    CardDeck deck;
+    Deck deck;
     int id;
     int score;
     List<Player> opponent;
-    public Player(int id,CardDeck deck,int score){
+    public Player(int id, Deck deck, int score){
         this.id = id;
         this.deck = deck;
         this.score = score;

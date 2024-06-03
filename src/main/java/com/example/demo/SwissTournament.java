@@ -11,32 +11,32 @@ public class SwissTournament {
     private int rounds;
     private int cutOff; // 晋级人数，根据总人数确定
 
-    public SwissTournament(int totalPlayers, CardDeckData cardDeckData) {
+    public SwissTournament(int totalPlayers, DeckDatabase cardDeckData) {
         this.players = initializePlayers(totalPlayers, cardDeckData);
         this.random = new Random();
         this.rounds = calculateRounds(totalPlayers); // 根据总人数计算轮数
         this.cutOff = calculateCutOff(totalPlayers); // 根据总人数计算晋级人数
     }
 
-    private List<Player> initializePlayers(int totalPlayers, CardDeckData cardDeckData) {
+    private List<Player> initializePlayers(int totalPlayers, DeckDatabase cardDeckData) {
         List<Player> players = new ArrayList<>();
         // 初始化选手列表，包括分配卡组和初始化胜负记录等
         for (int i = 1; i <= totalPlayers; i++) {
             // 根据使用率随机选择卡组
-            CardDeck deck = selectDeckBasedOnUsageRate(decks);
+            Deck deck = selectDeckBasedOnUsageRate(decks);
             players.add(new Player(i,deck,0));
         }
         return players;
     }
-    private CardDeck selectDeckBasedOnUsageRate(List<CardDeck> decks) {
+    private Deck selectDeckBasedOnUsageRate(List<Deck> decks) {
         // 根据使用率随机选择一个卡组
         float totalUsage = 0;
-        for (CardDeck deck : decks) {
+        for (Deck deck : decks) {
             totalUsage += deck.usageRate;
         }
         float randomPoint = random.nextFloat() * totalUsage;
         float currentUsage = 0;
-        for (CardDeck deck : decks) {
+        for (Deck deck : decks) {
             currentUsage += deck.usageRate;
             if (currentUsage >= randomPoint) {
                 return deck;
@@ -76,7 +76,7 @@ public class SwissTournament {
         // 实现瑞士轮制的配对逻辑
     }
 
-    private Player simulateMatch(Player player1, Player player2, CardDeckData cardDeckData) {
+    private Player simulateMatch(Player player1, Player player2, DeckDatabase cardDeckData) {
         // 根据卡组的胜率和随机性模拟比赛结果
     }
 

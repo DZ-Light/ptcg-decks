@@ -14,7 +14,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class PTCGDecksApplication {
-	static JsonDatabase db =new JsonDatabase();
+	static CardDatabase db =new CardDatabase();
 	public static void main(String[] args) {
 
 		String directoryPath = "deck"; // 替换为你的CSV文件目录路径

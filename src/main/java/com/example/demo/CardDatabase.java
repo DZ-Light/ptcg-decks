@@ -16,13 +16,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class JsonDatabase {
+public class CardDatabase {
     private final ObjectMapper objectMapper = new ObjectMapper();
     private final Path jsonDirectory = Paths.get("db/");
     private List<Card> cards;
 
     // 初始化ObjectMapper，设置缩进等
-    public JsonDatabase() {
+    public CardDatabase() {
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
         try {
             cards = readAll();
