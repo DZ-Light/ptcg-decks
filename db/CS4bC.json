@@ -9,6 +9,16 @@
   "mark" : "CS4bC",
   "number" : "049"
 }, {
+  "name" : "耿鬼V",
+  "type" : "Pokémon",
+  "mark" : "CS4bC",
+  "number" : "072"
+}, {
+  "name" : "耿鬼VMAX",
+  "type" : "Pokémon",
+  "mark" : "CS4bC",
+  "number" : "073"
+}, {
   "name" : "胡帕V",
   "type" : "Pokémon",
   "mark" : "CS4bC",
@@ -18,6 +28,16 @@
   "type" : "Pokémon",
   "mark" : "CS4bC",
   "number" : "085"
+}, {
+  "name" : "七夕青鸟",
+  "type" : "Pokémon",
+  "mark" : "CS4bC",
+  "number" : "091"
+}, {
+  "name" : "青绵鸟",
+  "type" : "Pokémon",
+  "mark" : "CS4bC",
+  "number" : "109"
 }, {
   "name" : "强力糖锭",
   "type" : "Trainer",

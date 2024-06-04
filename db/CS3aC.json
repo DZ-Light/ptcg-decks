@@ -13,4 +13,14 @@
   "type" : "Pokémon",
   "mark" : "CS3aC",
   "number" : "060"
+}, {
+  "name" : "亚莎",
+  "type" : "Trainer",
+  "mark" : "CS3aC",
+  "number" : "115"
+}, {
+  "name" : "恶之塔",
+  "type" : "Trainer",
+  "mark" : "CS3aC",
+  "number" : "123"
 } ]

@@ -24,6 +24,11 @@
   "mark" : "CSM2DC",
   "number" : "265"
 }, {
+  "name" : "莉莉艾的皮皮玩偶",
+  "type" : "Trainer",
+  "mark" : "CSM2DC",
+  "number" : "270"
+}, {
   "name" : "重置印章",
   "type" : "Trainer",
   "mark" : "CSM2DC",
@@ -39,6 +44,16 @@
   "mark" : "CSM2DC",
   "number" : "294"
 }, {
+  "name" : "竹兰&嘉德丽雅",
+  "type" : "Trainer",
+  "mark" : "CSM2DC",
+  "number" : "306"
+}, {
+  "name" : "玛奥&水莲",
+  "type" : "Trainer",
+  "mark" : "CSM2DC",
+  "number" : "322"
+}, {
   "name" : "熔接工",
   "type" : "Trainer",
   "mark" : "CSM2DC",
@@ -48,4 +63,9 @@
   "type" : "Trainer",
   "mark" : "CSM2DC",
   "number" : "335"
+}, {
+  "name" : "常青森林",
+  "type" : "Trainer",
+  "mark" : "CSM2DC",
+  "number" : "341"
 } ]

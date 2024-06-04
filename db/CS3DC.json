@@ -4,15 +4,35 @@
   "mark" : "CS3DC",
   "number" : "073"
 }, {
+  "name" : "戴鲁比",
+  "type" : "Pokémon",
+  "mark" : "CS3DC",
+  "number" : "092"
+}, {
+  "name" : "黑鲁加",
+  "type" : "Pokémon",
+  "mark" : "CS3DC",
+  "number" : "093"
+}, {
   "name" : "离洞绳",
   "type" : "Trainer",
   "mark" : "CS3DC",
   "number" : "127"
 }, {
+  "name" : "活力之壶",
+  "type" : "Trainer",
+  "mark" : "CS3DC",
+  "number" : "130"
+}, {
   "name" : "雾之水晶",
   "type" : "Trainer",
   "mark" : "CS3DC",
   "number" : "132"
+}, {
+  "name" : "梨花的信念",
+  "type" : "Trainer",
+  "mark" : "CS3DC",
+  "number" : "150"
 }, {
   "name" : "希巴",
   "type" : "Trainer",
@@ -28,4 +48,9 @@
   "type" : "Trainer",
   "mark" : "CS3DC",
   "number" : "165"
+}, {
+  "name" : "一击能量",
+  "type" : "Energy",
+  "mark" : "CS3DC",
+  "number" : "166"
 } ]

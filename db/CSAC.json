@@ -14,6 +14,16 @@
   "mark" : "CSAC",
   "number" : "014"
 }, {
+  "name" : "宝可装置3.0",
+  "type" : "Trainer",
+  "mark" : "CSAC",
+  "number" : "015"
+}, {
+  "name" : "大护符",
+  "type" : "Trainer",
+  "mark" : "CSAC",
+  "number" : "016"
+}, {
   "name" : "气球",
   "type" : "Trainer",
   "mark" : "CSAC",
@@ -33,6 +43,11 @@
   "type" : "Trainer",
   "mark" : "CSAC",
   "number" : "023"
+}, {
+  "name" : "极光能量",
+  "type" : "Energy",
+  "mark" : "CSAC",
+  "number" : "024"
 }, {
   "name" : "基本恶能量",
   "type" : "Energy",

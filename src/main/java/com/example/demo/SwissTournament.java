@@ -112,20 +112,18 @@ public class SwissTournament {
 
         for (Deck deck : decks) {
             if (deck.getName().equals(player1.getDeck())){
-                currentRate += deck.getWinRates().getOrDefault(player2.getDeck(),0.5F);
+                currentRate += deck.getWinRates().getOrDefault(player2.getDeck(),0.8F);
                 if (currentRate >= randomPoint) {
-                    player1.setScore(player1.getScore()+3);
-                    player1.getBattleLog().add("第"+round+"轮："+player1.getDeck()+" VS " + player2.getDeck()+" 胜");
-                    player2.getBattleLog().add("第"+round+"轮："+player2.getDeck()+" VS " + player1.getDeck()+" 负");
+                    player1.win(round,player2);
+                    player2.loss(round,player1);
                     return;
                 }
             }
             if (deck.getName().equals(player2.getDeck())){
-                currentRate += deck.getWinRates().getOrDefault(player1.getDeck(),0.5F);
+                currentRate += deck.getWinRates().getOrDefault(player1.getDeck(),0.8F);
                 if (currentRate >= randomPoint) {
-                    player2.setScore(player1.getScore()+3);
-                    player2.getBattleLog().add("第"+round+"轮："+player2.getDeck()+" VS " + player1.getDeck()+" 胜");
-                    player1.getBattleLog().add("第"+round+"轮："+player1.getDeck()+" VS " + player2.getDeck()+" 负");
+                    player2.win(round,player1);
+                    player1.loss(round,player2);
                     return;
                 }
             }
@@ -133,23 +131,21 @@ public class SwissTournament {
         if (player1.getDeck().equals("其他")){
             currentRate += 0.5F;
             if (currentRate >= randomPoint) {
-                player1.setScore(player1.getScore()+3);
-                player1.getBattleLog().add("第"+round+"轮："+player1.getDeck()+" VS " + player2.getDeck()+" 胜");
-                player2.getBattleLog().add("第"+round+"轮："+player2.getDeck()+" VS " + player1.getDeck()+" 负");
+                player1.win(round,player2);
+                player2.loss(round,player1);
                 return;
             }
         }
         if (player2.getDeck().equals("其他")){
             currentRate += 0.5F;
             if (currentRate >= randomPoint) {
-                player2.setScore(player1.getScore()+3);
-                player2.getBattleLog().add("第"+round+"轮："+player2.getDeck()+" VS " + player1.getDeck()+" 胜");
-                player1.getBattleLog().add("第"+round+"轮："+player1.getDeck()+" VS " + player2.getDeck()+" 负");
+                player2.win(round,player1);
+                player1.loss(round,player2);
                 return;
             }
         }
-        player1.getBattleLog().add("第"+round+"轮："+player1.getDeck()+" VS " + player2.getDeck()+" 双败");
-        player2.getBattleLog().add("第"+round+"轮："+player2.getDeck()+" VS " + player1.getDeck()+" 双败");
+        player1.dLoss(round,player2);
+        player2.dLoss(round,player1);
     }
 
     private List<Player> determineQualifiers(List<Player> players, int cutOff) {

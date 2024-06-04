@@ -1,4 +1,9 @@
 [ {
+  "name" : "百变怪V",
+  "type" : "Pokémon",
+  "mark" : "CS2.5C",
+  "number" : "038"
+}, {
   "name" : "洛兹大厦",
   "type" : "Trainer",
   "mark" : "CS2.5C",

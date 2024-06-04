@@ -18,9 +18,9 @@
 			<version>2.13.4.1</version> <!-- 请检查并使用最新版本 -->
 		</dependency>
 		<dependency>
-			<groupId>com.opencsv</groupId>
-			<artifactId>opencsv</artifactId>
-			<version>5.5.2</version> <!-- 请检查并使用最新版本 -->
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-csv</artifactId>
+			<version>1.8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>

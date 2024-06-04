@@ -43,4 +43,9 @@
   "type" : "Trainer",
   "mark" : "CS3.5C",
   "number" : "063"
+}, {
+  "name" : "冲击能量",
+  "type" : "Energy",
+  "mark" : "CS3.5C",
+  "number" : "064"
 } ]

@@ -1,4 +1,14 @@
 [ {
+  "name" : "锹农炮虫V",
+  "type" : "Pokémon",
+  "mark" : "CS1.5C",
+  "number" : "017"
+}, {
+  "name" : "智挥猩",
+  "type" : "Pokémon",
+  "mark" : "CS1.5C",
+  "number" : "036"
+}, {
   "name" : "回收网",
   "type" : "Trainer",
   "mark" : "CS1.5C",
@@ -8,6 +18,11 @@
   "type" : "Trainer",
   "mark" : "CS1.5C",
   "number" : "046"
+}, {
+  "name" : "道具拆除器",
+  "type" : "Trainer",
+  "mark" : "CS1.5C",
+  "number" : "047"
 }, {
   "name" : "高温【火】能量",
   "type" : "Energy",

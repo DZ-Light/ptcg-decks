@@ -1,4 +1,9 @@
 [ {
+  "name" : "铝钢龙V",
+  "type" : "Pokémon",
+  "mark" : "CS1DC",
+  "number" : "146"
+}, {
   "name" : "朋友手册",
   "type" : "Trainer",
   "mark" : "CS1DC",
@@ -8,4 +13,9 @@
   "type" : "Trainer",
   "mark" : "CS1DC",
   "number" : "187"
+}, {
+  "name" : "幸运蛋",
+  "type" : "Trainer",
+  "mark" : "CS1DC",
+  "number" : "188"
 } ]

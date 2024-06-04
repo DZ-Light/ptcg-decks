@@ -3,4 +3,9 @@
   "type" : "Pokémon",
   "mark" : "CSM2aC",
   "number" : "042"
+}, {
+  "name" : "马志士的作战策略",
+  "type" : "Trainer",
+  "mark" : "CSM2aC",
+  "number" : "148"
 } ]

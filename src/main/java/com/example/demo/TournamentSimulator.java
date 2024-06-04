@@ -4,23 +4,23 @@ import java.util.*;
 
 public class TournamentSimulator {
     public static void main(String[] args) {
-        int totalPlayers = 128; // 假设总人数为128
-        int simulations = 1000; // 模拟次数
+        int totalPlayers = 1500; // 总人数
+        int simulations = 100; // 模拟次数
 
         try {
-            Map<String,Integer> map = new HashMap<>();
+            Map<String, Integer> map = new HashMap<>();
             DeckDatabase deckDatabase = new DeckDatabase();
             for (int i = 0; i < simulations; i++) {
-                SwissTournament swissTournament = new SwissTournament(totalPlayers,deckDatabase);
-               List<Player> qualifiers = swissTournament.simulate(deckDatabase.getDecks());
-               System.out.println("模拟第"+(i+1)+"次：");
+                SwissTournament swissTournament = new SwissTournament(totalPlayers, deckDatabase);
+                List<Player> qualifiers = swissTournament.simulate(deckDatabase.getDecks());
+                System.out.println("模拟第" + (i + 1) + "次：");
                 for (int j = 0; j < qualifiers.size(); j++) {
-                    System.out.println("第"+(j+1)+"名："+qualifiers.get(j).getDeck());
+                    System.out.println("第" + (j + 1) + "名：" + qualifiers.get(j).getDeck());
                     System.out.println("晋级之路");
                     for (String s : qualifiers.get(j).getBattleLog()) {
                         System.out.println(s);
                     }
-                    map.put(qualifiers.get(j).getDeck(),map.getOrDefault(qualifiers.get(j).getDeck(),0)+1);
+                    map.put(qualifiers.get(j).getDeck(), map.getOrDefault(qualifiers.get(j).getDeck(), 0) + 1);
                 }
             }
 
@@ -34,6 +34,7 @@ public class TournamentSimulator {
             e.printStackTrace();
         }
     }
+
     public static <K, V extends Comparable<? super V>> Map<K, V> sortMapByValueDescending(Map<K, V> map) {
         List<Map.Entry<K, V>> list = new ArrayList<>(map.entrySet());
         // 根据value进行倒序排序

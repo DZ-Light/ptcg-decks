@@ -9,6 +9,16 @@
   "mark" : "CS4aC",
   "number" : "083"
 }, {
+  "name" : "铝钢龙V",
+  "type" : "Pokémon",
+  "mark" : "CS4aC",
+  "number" : "106"
+}, {
+  "name" : "铝钢龙VMAX",
+  "type" : "Pokémon",
+  "mark" : "CS4aC",
+  "number" : "107"
+}, {
   "name" : "救援行李箱",
   "type" : "Trainer",
   "mark" : "CS4aC",
@@ -18,4 +28,9 @@
   "type" : "Trainer",
   "mark" : "CS4aC",
   "number" : "125"
+}, {
+  "name" : "结晶洞窟",
+  "type" : "Trainer",
+  "mark" : "CS4aC",
+  "number" : "130"
 } ]
