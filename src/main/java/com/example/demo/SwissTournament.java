@@ -163,7 +163,7 @@ public class SwissTournament {
             int subSource = 0;
             for (Player opponent: players){
                 if (player.getOpponent().contains(opponent.getId())){
-                    subSource+=opponent.getSubScore();
+                    subSource+=opponent.getScore();
                 }
             }
             player.setSubScore(subSource);

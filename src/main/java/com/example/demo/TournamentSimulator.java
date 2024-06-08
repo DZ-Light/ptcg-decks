@@ -16,6 +16,9 @@ public class TournamentSimulator {
                 System.out.println("模拟第" + (i + 1) + "次：");
                 for (int j = 0; j < qualifiers.size(); j++) {
                     System.out.println("第" + (j + 1) + "名：" + qualifiers.get(j).getDeck());
+                    System.out.println("战绩：" + qualifiers.get(j).getWin() + " - " + qualifiers.get(j).getLoss());
+                    System.out.println("积分：" + qualifiers.get(j).getScore());
+                    System.out.println("小分：" + qualifiers.get(j).getSubScore());
                     System.out.println("晋级之路");
                     for (String s : qualifiers.get(j).getBattleLog()) {
                         System.out.println(s);

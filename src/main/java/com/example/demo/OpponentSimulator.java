@@ -1,41 +1,65 @@
 package com.example.demo;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
 public class OpponentSimulator {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        int initRounds = Integer.parseInt(args[0]);
         int totalPlayers = 1500; // 总人数
         int rounds = (int) Math.ceil(Math.log(totalPlayers) / Math.log(2));
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
         DeckDatabase deckDatabase = new DeckDatabase();
         List<Player> players = new ArrayList<>();
-        players.add(new Player("1", "黑马", 0));
+        players.add(new Player("1", "汇流三神", 0));
         for (int i = 2; i <= totalPlayers; i++) {
             // 根据使用率随机选择卡组
             String deck = selectDeckBasedOnUsageRate(deckDatabase.getDecks());
             players.add(new Player(Integer.toString(i), deck, 0));
         }
 
-        for (int round = 1; round <= rounds; round++) {
+        if (initRounds - 1 > 0) {
+            players = objectMapper.readValue(new File("player_" + (initRounds - 1) + ".json"), new TypeReference<List<Player>>() {
+            });
+        }
+
+
+        for (int round = initRounds; round <= rounds; round++) {
             // 进行配对和模拟比赛
             Map<Player, Player> matchMaps = pairPlayers(round, players);
             for (Map.Entry<Player, Player> entry : matchMaps.entrySet()) {
                 if (entry.getKey().getId().equals("1") || entry.getValue().getId().equals("1")) {
                     System.out.println("第" + round + "轮：" + entry.getKey().getId() + "-" + entry.getKey().getDeck() + " VS " + entry.getValue().getId() + "-" + entry.getValue().getDeck());
-                    Scanner scanner = new Scanner(System.in);
-                    String result = scanner.nextLine();
-                    switch (result) {
-                        case "1":
-                            entry.getKey().win(round, entry.getValue());
-                            entry.getValue().loss(round, entry.getKey());
-                            break;
-                        case "2":
-                            entry.getValue().win(round, entry.getKey());
-                            entry.getKey().loss(round, entry.getValue());
-                            break;
-                        default:
-                            entry.getKey().dLoss(round, entry.getValue());
-                            entry.getValue().dLoss(round, entry.getKey());
-                    }
+                    boolean flag = true;
+                    do {
+                        Scanner scanner = new Scanner(System.in);
+                        String result = scanner.nextLine();
+                        switch (result) {
+                            case "1":
+                                entry.getKey().win(round, entry.getValue());
+                                entry.getValue().loss(round, entry.getKey());
+                                flag = false;
+                                break;
+                            case "2":
+                                entry.getValue().win(round, entry.getKey());
+                                entry.getKey().loss(round, entry.getValue());
+                                flag = false;
+                                break;
+                            case "0":
+                                entry.getKey().dLoss(round, entry.getValue());
+                                entry.getValue().dLoss(round, entry.getKey());
+                                flag = false;
+                            default:
+                                System.out.println("请重新输入对局结果");
+                        }
+                    } while (flag);
                 } else {
                     simulateMatch(round, entry.getKey(), entry.getValue(), deckDatabase.getDecks());
                 }
@@ -43,6 +67,11 @@ public class OpponentSimulator {
             //更新小分
             updateSubSource(players);
             players.sort(new PlayerComparator());
+            try {
+                objectMapper.writeValue(new File("player_" + round + ".json"), players);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
             for (int i = 0; i < players.size(); i++) {
                 if (players.get(i).getId().equals("1")) {
                     System.out.println("目前排名：" + (i + 1) + "名");
@@ -113,8 +142,6 @@ public class OpponentSimulator {
             if (i + 1 < size) {
                 // 将当前元素和它的下一个元素作为键值对添加到map中
                 matchMaps.put(players.get(i), players.get(i + 1));
-                players.get(i).getOpponent().add(players.get(i + 1).getId());
-                players.get(i + 1).getOpponent().add(players.get(i).getId());
             } else {
                 Player player = players.get(i);
                 player.setScore(player.getScore() + 3);

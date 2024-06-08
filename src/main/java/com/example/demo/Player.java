@@ -1,11 +1,15 @@
 package com.example.demo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Player {
     private String deck;
     private String id;
@@ -27,14 +31,17 @@ public class Player {
     public void win(int round,Player opponent){
         this.win++;
         this.score+=3;
+        this.opponent.add(opponent.getId());
         this.battleLog.add("第" + round + "轮：" + this.deck + " VS " + opponent.getDeck() + " 胜");
     }
     public void loss(int round,Player opponent){
         this.loss++;
+        this.opponent.add(opponent.getId());
         this.battleLog.add("第" + round + "轮：" + this.deck + " VS " + opponent.getDeck() + " 负");
     }
     public void dLoss(int round,Player opponent){
         this.loss++;
+        this.opponent.add(opponent.getId());
         this.battleLog.add("第" + round + "轮：" + this.deck + " VS " + opponent.getDeck() + " 双败");
     }
 
