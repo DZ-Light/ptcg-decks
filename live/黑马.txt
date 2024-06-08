@@ -1,0 +1,37 @@
+Pokémon: 11
+1 Marshadow UNB 81
+1 Shadow Rider Calyrex V PR-SW 131
+1 Dedenne-GX SMALT 156
+3 Shadow Rider Calyrex V ASR-TG 17
+1 Galarian Articuno PR-SW 282
+4 Shadow Rider Calyrex VMAX ASR-TG 18
+1 Crobat V LOR-TG 20
+1 Gengar & Mimikyu-GX TEU 165
+1 Mewtwo & Mew-GX SMP 191
+1 Zacian V CRZ-GG 48
+1 Trevenant & Dusknoir-GX SMP 217
+
+Trainer: 17
+2 Boss's Orders RCL 189
+3 Battle VIP Pass FST 225 PH
+4 Professor's Research PR-SW 152
+1 Escape Rope BUS 163
+4 Fog Crystal CRE 227
+1 Boss's Orders LOR-TG 24
+1 Marnie SSH 200
+1 Marnie SSH 208
+1 Switch MEW 206
+1 Marnie PR-SW 121
+1 Ultra Ball BRS 186
+2 Training Court FST 282
+3 Quick Ball SSH 216
+1 Reset Stamp UNM 253
+1 Ordinary Rod SSH 215
+1 Switch SUM 160
+3 Air Balloon SSH 213
+
+Energy: 2
+10 Basic {P} Energy MEW 207
+3 Basic {P} Energy SUM 162
+
+Total Cards: 60

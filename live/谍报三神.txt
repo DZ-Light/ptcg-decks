@@ -1,0 +1,41 @@
+Pokémon 8
+1 Inteleon EVS 227
+4 Sobble CRE 41
+2 Inteleon SHF 100
+3 Drizzile SHF 99
+2 Arceus & Dialga & Palkia-GX CEC 221
+1 Oranguru BRS-TG 12
+1 Galarian Moltres V CRE 97
+2 Galarian Moltres PR-SW 284
+
+Trainer 23
+1 Lucky Egg SSH 167 PH
+1 Reset Stamp UNM 253
+1 Tag Call CEC 270
+1 Pal Pad UPR 132 PH
+2 Viridian Forest UNM 256
+1 Raihan CRZ-GG 65
+1 Raihan SIT-TG 27
+1 Rescue Carrier CRZ 142 PH
+3 Evolution Incense SSH 163 PH
+3 Scoop Up Net RCL 207
+4 Level Ball BST 181
+3 Quick Ball SSH 216
+2 Boss's Orders PR-SW 251
+1 Professor's Research PR-SW 152
+1 Mallow & Lana CEC 231
+1 Klara PR-SW 302
+1 Erika's Hospitality TEU 174
+1 Cynthia & Caitlin CEC 228
+1 Lt. Surge's Strategy HIF 60 PH
+1 Escape Rope BUS 163
+1 Energy Switch SIT 212
+1 Fan of Waves CRE 226
+2 Energy Search SSH 161 PH
+
+Energy 3
+3 Basic {W} Energy PAL 279
+2 Basic {M} Energy EVS 237
+4 Basic {D} Energy EVS 236
+
+Total Cards 60
