@@ -1,4 +1,9 @@
 [ {
+  "name" : "卡璞・鸣鸣V",
+  "type" : "Pokémon",
+  "mark" : "CS1DC",
+  "number" : "075"
+}, {
   "name" : "铝钢龙V",
   "type" : "Pokémon",
   "mark" : "CS1DC",
@@ -8,6 +13,11 @@
   "type" : "Trainer",
   "mark" : "CS1DC",
   "number" : "174"
+}, {
+  "name" : "金属碟",
+  "type" : "Trainer",
+  "mark" : "CS1DC",
+  "number" : "182"
 }, {
   "name" : "活力头带",
   "type" : "Trainer",

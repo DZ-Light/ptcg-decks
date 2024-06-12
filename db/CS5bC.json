@@ -1,0 +1,56 @@
+[ {
+  "name" : "呆壳兽",
+  "type" : "Pokémon",
+  "mark" : "CS5bC",
+  "number" : "040"
+}, {
+  "name" : "‌宝石海星V",
+  "type" : "Pokémon",
+  "mark" : "CS5bC",
+  "number" : "041"
+}, {
+  "name" : "霓虹鱼V",
+  "type" : "Pokémon",
+  "mark" : "CS5bC",
+  "number" : "049"
+}, {
+  "name" : "起源帕路奇亚VSTAR",
+  "type" : "Pokémon",
+  "mark" : "CS5bC",
+  "number" : "051"
+}, {
+  "name" : "玛纳霏",
+  "type" : "Pokémon",
+  "mark" : "CS5bC",
+  "number" : "052"
+}, {
+  "name" : "结草贵妇",
+  "type" : "Pokémon",
+  "mark" : "CS5bC",
+  "number" : "070"
+}, {
+  "name" : "光辉摔角鹰人",
+  "type" : "Pokémon",
+  "mark" : "CS5bC",
+  "number" : "080"
+}, {
+  "name" : "结草贵妇",
+  "type" : "Pokémon",
+  "mark" : "CS5bC",
+  "number" : "091"
+}, {
+  "name" : "大牙狸",
+  "type" : "Pokémon",
+  "mark" : "CS5bC",
+  "number" : "111"
+}, {
+  "name" : "滨名的后援",
+  "type" : "Trainer",
+  "mark" : "CS5bC",
+  "number" : "125"
+}, {
+  "name" : "神奥神殿",
+  "type" : "Trainer",
+  "mark" : "CS5bC",
+  "number" : "128"
+} ]

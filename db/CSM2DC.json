@@ -44,6 +44,11 @@
   "mark" : "CSM2DC",
   "number" : "294"
 }, {
+  "name" : "古兹马&哈拉",
+  "type" : "Trainer",
+  "mark" : "CSM2DC",
+  "number" : "301"
+}, {
   "name" : "竹兰&嘉德丽雅",
   "type" : "Trainer",
   "mark" : "CSM2DC",
@@ -53,7 +58,7 @@
   "type" : "Trainer",
   "mark" : "CSM2DC",
   "number" : "322"
-}, {
+},  {
   "name" : "熔接工",
   "type" : "Trainer",
   "mark" : "CSM2DC",

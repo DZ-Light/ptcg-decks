@@ -64,6 +64,11 @@
   "mark" : "CSAC",
   "number" : "FIR"
 }, {
+  "name" : "基本草能量",
+  "type" : "Energy",
+  "mark" : "CSAC",
+  "number" : "GRA"
+}, {
   "name" : "基本雷能量",
   "type" : "Energy",
   "mark" : "CSAC",

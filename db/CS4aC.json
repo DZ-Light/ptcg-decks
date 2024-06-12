@@ -1,8 +1,33 @@
 [ {
+  "name" : "叶伊布V",
+  "type" : "Pokémon",
+  "mark" : "CS4aC",
+  "number" : "008"
+}, {
+  "name" : "叶伊布VMAX",
+  "type" : "Pokémon",
+  "mark" : "CS4aC",
+  "number" : "009"
+}, {
+  "name" : "好胜毛蟹V",
+  "type" : "Pokémon",
+  "mark" : "CS4aC",
+  "number" : "040"
+}, {
   "name" : "锹农炮虫",
   "type" : "Pokémon",
   "mark" : "CS4aC",
   "number" : "054"
+}, {
+  "name" : "仙子伊布V",
+  "type" : "Pokémon",
+  "mark" : "CS4aC",
+  "number" : "068"
+}, {
+  "name" : "仙子伊布VMAX",
+  "type" : "Pokémon",
+  "mark" : "CS4aC",
+  "number" : "069"
 }, {
   "name" : "伽勒尔 火焰鸟",
   "type" : "Pokémon",

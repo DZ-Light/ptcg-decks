@@ -1,0 +1,31 @@
+[ {
+  "name" : "起源帕路奇亚V",
+  "type" : "Pokémon",
+  "mark" : "CSNC",
+  "number" : "003"
+}, {
+  "name" : "洗翠 大剑鬼V",
+  "type" : "Pokémon",
+  "mark" : "CSNC",
+  "number" : "007"
+}, {
+  "name" : "阿尔宙斯V",
+  "type" : "Pokémon",
+  "mark" : "CSNC",
+  "number" : "009"
+}, {
+  "name" : "讲究腰带",
+  "type" : "Trainer",
+  "mark" : "CSNC",
+  "number" : "018"
+}, {
+  "name" : "竹兰的霸气",
+  "type" : "Trainer",
+  "mark" : "CSNC",
+  "number" : "020"
+}, {
+  "name" : "双重涡轮能量",
+  "type" : "Energy",
+  "mark" : "CSNC",
+  "number" : "024"
+} ]

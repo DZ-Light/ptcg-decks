@@ -1,4 +1,19 @@
 [ {
+  "name" : "铁炮鱼",
+  "type" : "Pokémon",
+  "mark" : "CS3DC",
+  "number" : "028"
+}, {
+  "name" : "章鱼桶",
+  "type" : "Pokémon",
+  "mark" : "CS3DC",
+  "number" : "029"
+}, {
+  "name" : "捷拉奥拉V",
+  "type" : "Pokémon",
+  "mark" : "CS3DC",
+  "number" : "055"
+}, {
   "name" : "黑马蕾冠王V",
   "type" : "Pokémon",
   "mark" : "CS3DC",
@@ -34,6 +49,11 @@
   "mark" : "CS3DC",
   "number" : "150"
 }, {
+  "name" : "可尔妮的气势",
+  "type" : "Trainer",
+  "mark" : "CS3DC",
+  "number" : "152"
+}, {
   "name" : "希巴",
   "type" : "Trainer",
   "mark" : "CS3DC",
@@ -53,4 +73,9 @@
   "type" : "Energy",
   "mark" : "CS3DC",
   "number" : "166"
+}, {
+  "name" : "连击能量",
+  "type" : "Energy",
+  "mark" : "CS3DC",
+  "number" : "170"
 } ]

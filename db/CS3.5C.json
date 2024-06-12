@@ -9,6 +9,16 @@
   "mark" : "CS3.5C",
   "number" : "025"
 }, {
+  "name" : "好啦鱿",
+  "type" : "Pokémon",
+  "mark" : "CS3.5C",
+  "number" : "033"
+}, {
+  "name" : "乌贼王",
+  "type" : "Pokémon",
+  "mark" : "CS3.5C",
+  "number" : "034"
+}, {
   "name" : "伽勒尔 火焰鸟V",
   "type" : "Pokémon",
   "mark" : "CS3.5C",
@@ -48,4 +58,9 @@
   "type" : "Energy",
   "mark" : "CS3.5C",
   "number" : "064"
+}, {
+  "name" : "螺旋能量",
+  "type" : "Energy",
+  "mark" : "CS3.5C",
+  "number" : "065"
 } ]

@@ -13,4 +13,14 @@
   "type" : "Pokémon",
   "mark" : "CSDC",
   "number" : "017"
+}, {
+  "name" : "飞翔皮卡丘V",
+  "type" : "Pokémon",
+  "mark" : "CSDC",
+  "number" : "023"
+}, {
+  "name" : "飞翔皮卡丘VMAX",
+  "type" : "Pokémon",
+  "mark" : "CSDC",
+  "number" : "024"
 } ]

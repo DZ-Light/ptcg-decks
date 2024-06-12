@@ -9,6 +9,16 @@
   "mark" : "CS3bC",
   "number" : "045"
 }, {
+  "name" : "连击武道熊师V",
+  "type" : "Pokémon",
+  "mark" : "CS3bC",
+  "number" : "085"
+}, {
+  "name" : "连击武道熊师VMAX",
+  "type" : "Pokémon",
+  "mark" : "CS3bC",
+  "number" : "086"
+}, {
   "name" : "潮漩扇",
   "type" : "Trainer",
   "mark" : "CS3bC",
@@ -18,4 +28,9 @@
   "type" : "Trainer",
   "mark" : "CS3bC",
   "number" : "107"
+}, {
+  "name" : "水之塔",
+  "type" : "Trainer",
+  "mark" : "CS3bC",
+  "number" : "121"
 } ]

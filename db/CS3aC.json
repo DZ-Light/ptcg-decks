@@ -1,4 +1,9 @@
 [ {
+  "name" : "卡璞・鸣鸣VMAX",
+  "type" : "Pokémon",
+  "mark" : "CS3aC",
+  "number" : "035"
+}, {
   "name" : "黑马蕾冠王V",
   "type" : "Pokémon",
   "mark" : "CS3aC",
@@ -14,10 +19,25 @@
   "mark" : "CS3aC",
   "number" : "060"
 }, {
+  "name" : "酷豹V",
+  "type" : "Pokémon",
+  "mark" : "CS3aC",
+  "number" : "090"
+}, {
   "name" : "亚莎",
   "type" : "Trainer",
   "mark" : "CS3aC",
   "number" : "115"
+}, {
+  "name" : "夏科娅",
+  "type" : "Trainer",
+  "mark" : "CS3aC",
+  "number" : "119"
+}, {
+  "name" : "芽米",
+  "type" : "Trainer",
+  "mark" : "CS3aC",
+  "number" : "122"
 }, {
   "name" : "恶之塔",
   "type" : "Trainer",

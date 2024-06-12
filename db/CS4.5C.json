@@ -19,6 +19,16 @@
   "mark" : "CS4.5C",
   "number" : "023"
 }, {
+  "name" : "索罗亚",
+  "type" : "Pokémon",
+  "mark" : "CS4.5C",
+  "number" : "034"
+}, {
+  "name" : "索罗亚克",
+  "type" : "Pokémon",
+  "mark" : "CS4.5C",
+  "number" : "035"
+}, {
   "name" : "机器鹕",
   "type" : "Trainer",
   "mark" : "CS4.5C",
@@ -33,6 +43,16 @@
   "type" : "Trainer",
   "mark" : "CS4.5C",
   "number" : "052"
+}, {
+  "name" : "雪叶徽章",
+  "type" : "Trainer",
+  "mark" : "CS4.5C",
+  "number" : "054"
+}, {
+  "name" : "蝴蝶结徽章",
+  "type" : "Trainer",
+  "mark" : "CS4.5C",
+  "number" : "057"
 }, {
   "name" : "冒险家的发现",
   "type" : "Trainer",

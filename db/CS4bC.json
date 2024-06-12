@@ -1,4 +1,14 @@
 [ {
+  "name" : "冰砌鹅",
+  "type" : "Pokémon",
+  "mark" : "CS4bC",
+  "number" : "037"
+}, {
+  "name" : "逐电犬VMAX",
+  "type" : "Pokémon",
+  "mark" : "CS4bC",
+  "number" : "045"
+}, {
   "name" : "梦幻V",
   "type" : "Pokémon",
   "mark" : "CS4bC",
@@ -34,6 +44,16 @@
   "mark" : "CS4bC",
   "number" : "091"
 }, {
+  "name" : "苹裹龙",
+  "type" : "Pokémon",
+  "mark" : "CS4bC",
+  "number" : "104"
+}, {
+  "name" : "丰蜜龙",
+  "type" : "Pokémon",
+  "mark" : "CS4bC",
+  "number" : "105"
+}, {
   "name" : "青绵鸟",
   "type" : "Pokémon",
   "mark" : "CS4bC",
@@ -53,6 +73,21 @@
   "type" : "Trainer",
   "mark" : "CS4bC",
   "number" : "124"
+}, {
+  "name" : "芭内特博士",
+  "type" : "Trainer",
+  "mark" : "CS4bC",
+  "number" : "127"
+}, {
+  "name" : "希嘉娜的决心",
+  "type" : "Trainer",
+  "mark" : "CS4bC",
+  "number" : "128"
+}, {
+  "name" : "风暴山脉",
+  "type" : "Trainer",
+  "mark" : "CS4bC",
+  "number" : "130"
 }, {
   "name" : "汇流能量",
   "type" : "Energy",

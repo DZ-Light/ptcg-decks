@@ -4,6 +4,16 @@
   "mark" : "CSM2.5C",
   "number" : "016"
 }, {
+  "name" : "瓦斯弹",
+  "type" : "Pokémon",
+  "mark" : "CSM2.5C",
+  "number" : "017"
+}, {
+  "name" : "花舞鸟GX",
+  "type" : "Pokémon",
+  "mark" : "CSM2.5C",
+  "number" : "021"
+}, {
   "name" : "玛夏多",
   "type" : "Pokémon",
   "mark" : "CSM2.5C",
@@ -19,10 +29,25 @@
   "mark" : "CSM2.5C",
   "number" : "030"
 }, {
+  "name" : "大嘴娃GX",
+  "type" : "Pokémon",
+  "mark" : "CSM2.5C",
+  "number" : "032"
+}, {
   "name" : "阿尔宙斯&帝牙卢卡&帕路奇亚GX",
   "type" : "Pokémon",
   "mark" : "CSM2.5C",
   "number" : "036"
+}, {
+  "name" : "祈祷师",
+  "type" : "Trainer",
+  "mark" : "CSM2.5C",
+  "number" : "054"
+}, {
+  "name" : "霍米加",
+  "type" : "Trainer",
+  "mark" : "CSM2.5C",
+  "number" : "055"
 }, {
   "name" : "混沌潮漩",
   "type" : "Trainer",
