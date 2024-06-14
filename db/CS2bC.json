@@ -1,51 +1,51 @@
 [ {
   "name" : "捷拉奥拉",
   "type" : "Pokémon",
-  "mark" : "CS2bC",
-  "number" : "041"
+  "setCode" : "CS2bC",
+  "cardIndex" : "041"
 }, {
   "name" : "叉字蝠V",
   "type" : "Pokémon",
-  "mark" : "CS2bC",
-  "number" : "074"
+  "setCode" : "CS2bC",
+  "cardIndex" : "074"
 }, {
   "name" : "叉字蝠VMAX",
   "type" : "Pokémon",
-  "mark" : "CS2bC",
-  "number" : "075"
+  "setCode" : "CS2bC",
+  "cardIndex" : "075"
 }, {
   "name" : "胡帕",
   "type" : "Pokémon",
-  "mark" : "CS2bC",
-  "number" : "089"
+  "setCode" : "CS2bC",
+  "cardIndex" : "089"
 }, {
   "name" : "无极汰那V",
   "type" : "Pokémon",
-  "mark" : "CS2bC",
-  "number" : "092"
+  "setCode" : "CS2bC",
+  "cardIndex" : "092"
 }, {
   "name" : "无极汰那VMAX",
   "type" : "Pokémon",
-  "mark" : "CS2bC",
-  "number" : "093"
+  "setCode" : "CS2bC",
+  "cardIndex" : "093"
 }, {
   "name" : "呐喊队的助威毛巾",
   "type" : "Trainer",
-  "mark" : "CS2bC",
-  "number" : "103"
+  "setCode" : "CS2bC",
+  "cardIndex" : "103"
 }, {
   "name" : "聂梓",
   "type" : "Trainer",
-  "mark" : "CS2bC",
-  "number" : "110"
+  "setCode" : "CS2bC",
+  "cardIndex" : "110"
 }, {
   "name" : "露璃娜",
   "type" : "Trainer",
-  "mark" : "CS2bC",
-  "number" : "112"
+  "setCode" : "CS2bC",
+  "cardIndex" : "112"
 }, {
   "name" : "潜行【恶】能量",
   "type" : "Energy",
-  "mark" : "CS2bC",
-  "number" : "115"
+  "setCode" : "CS2bC",
+  "cardIndex" : "115"
 } ]

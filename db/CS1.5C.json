@@ -1,76 +1,76 @@
 [ {
   "name" : "伽勒尔 踏冰人偶",
   "type" : "Pokémon",
-  "mark" : "CS1.5C",
-  "number" : "011"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "011"
 }, {
   "name" : "锹农炮虫V",
   "type" : "Pokémon",
-  "mark" : "CS1.5C",
-  "number" : "017"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "017"
 }, {
   "name" : "咚咚鼠",
   "type" : "Pokémon",
-  "mark" : "CS1.5C",
-  "number" : "022"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "022"
 }, {
   "name" : "怖思壶",
   "type" : "Pokémon",
-  "mark" : "CS1.5C",
-  "number" : "024"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "024"
 }, {
   "name" : "瓦斯弹",
   "type" : "Pokémon",
-  "mark" : "CS1.5C",
-  "number" : "027"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "027"
 }, {
   "name" : "伽勒尔 双弹瓦斯",
   "type" : "Pokémon",
-  "mark" : "CS1.5C",
-  "number" : "028"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "028"
 }, {
   "name" : "掘掘兔",
   "type" : "Pokémon",
-  "mark" : "CS1.5C",
-  "number" : "034"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "034"
 }, {
   "name" : "智挥猩",
   "type" : "Pokémon",
-  "mark" : "CS1.5C",
-  "number" : "036"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "036"
 }, {
   "name" : "回收网",
   "type" : "Trainer",
-  "mark" : "CS1.5C",
-  "number" : "043"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "043"
 }, {
   "name" : "足量水桶",
   "type" : "Trainer",
-  "mark" : "CS1.5C",
-  "number" : "046"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "046"
 }, {
   "name" : "道具拆除器",
   "type" : "Trainer",
-  "mark" : "CS1.5C",
-  "number" : "047"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "047"
 }, {
   "name" : "伽勒尔矿山",
   "type" : "Trainer",
-  "mark" : "CS1.5C",
-  "number" : "051"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "051"
 }, {
   "name" : "高温【火】能量",
   "type" : "Energy",
-  "mark" : "CS1.5C",
-  "number" : "052"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "052"
 }, {
   "name" : "高速【雷】能量",
   "type" : "Energy",
-  "mark" : "CS1.5C",
-  "number" : "053"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "053"
 }, {
   "name" : "捕获能量",
   "type" : "Energy",
-  "mark" : "CS1.5C",
-  "number" : "055"
+  "setCode" : "CS1.5C",
+  "cardIndex" : "055"
 } ]

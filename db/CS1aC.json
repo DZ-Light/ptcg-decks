@@ -1,16 +1,16 @@
 [ {
   "name" : "变涩蜥",
   "type" : "Pokémon",
-  "mark" : "CS1aC",
-  "number" : "016"
+  "setCode" : "CS1aC",
+  "cardIndex" : "016"
 }, {
   "name" : "千面避役",
   "type" : "Pokémon",
-  "mark" : "CS1aC",
-  "number" : "017"
+  "setCode" : "CS1aC",
+  "cardIndex" : "017"
 }, {
   "name" : "逐电犬V",
   "type" : "Pokémon",
-  "mark" : "CS1aC",
-  "number" : "039"
+  "setCode" : "CS1aC",
+  "cardIndex" : "039"
 } ]

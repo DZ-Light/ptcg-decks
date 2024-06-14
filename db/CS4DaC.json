@@ -1,71 +1,71 @@
 [ {
   "name" : "炎帝V",
   "type" : "Pokémon",
-  "mark" : "CS4DaC",
-  "number" : "056"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "056"
 }, {
   "name" : "雷公V",
   "type" : "Pokémon",
-  "mark" : "CS4DaC",
-  "number" : "137"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "137"
 }, {
   "name" : "扒手猫",
   "type" : "Pokémon",
-  "mark" : "CS4DaC",
-  "number" : "271"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "271"
 }, {
   "name" : "酷豹",
   "type" : "Pokémon",
-  "mark" : "CS4DaC",
-  "number" : "272"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "272"
 }, {
   "name" : "藏玛然特V",
   "type" : "Pokémon",
-  "mark" : "CS4DaC",
-  "number" : "313"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "313"
 }, {
   "name" : "能量回收",
   "type" : "Trainer",
-  "mark" : "CS4DaC",
-  "number" : "365"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "365"
 }, {
   "name" : "能量转移",
   "type" : "Trainer",
-  "mark" : "CS4DaC",
-  "number" : "366"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "366"
 }, {
   "name" : "能量输送",
   "type" : "Trainer",
-  "mark" : "CS4DaC",
-  "number" : "367"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "367"
 }, {
   "name" : "粉碎之锤",
   "type" : "Trainer",
-  "mark" : "CS4DaC",
-  "number" : "372"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "372"
 }, {
   "name" : "高级球",
   "type" : "Trainer",
-  "mark" : "CS4DaC",
-  "number" : "375"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "375"
 }, {
   "name" : "神奇糖果",
   "type" : "Trainer",
-  "mark" : "CS4DaC",
-  "number" : "376"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "376"
 }, {
   "name" : "宝可梦交替",
   "type" : "Trainer",
-  "mark" : "CS4DaC",
-  "number" : "377"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "377"
 }, {
   "name" : "博士的研究",
   "type" : "Trainer",
-  "mark" : "CS4DaC",
-  "number" : "403"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "403"
 }, {
   "name" : "老大的指令",
   "type" : "Trainer",
-  "mark" : "CS4DaC",
-  "number" : "406"
+  "setCode" : "CS4DaC",
+  "cardIndex" : "406"
 } ]

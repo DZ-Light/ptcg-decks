@@ -1,66 +1,66 @@
 [ {
   "name" : "泪眼蜥",
   "type" : "Pokémon",
-  "mark" : "CS3.5C",
-  "number" : "023"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "023"
 }, {
   "name" : "千面避役",
   "type" : "Pokémon",
-  "mark" : "CS3.5C",
-  "number" : "025"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "025"
 }, {
   "name" : "好啦鱿",
   "type" : "Pokémon",
-  "mark" : "CS3.5C",
-  "number" : "033"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "033"
 }, {
   "name" : "乌贼王",
   "type" : "Pokémon",
-  "mark" : "CS3.5C",
-  "number" : "034"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "034"
 }, {
   "name" : "伽勒尔 火焰鸟V",
   "type" : "Pokémon",
-  "mark" : "CS3.5C",
-  "number" : "041"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "041"
 }, {
   "name" : "山谷回声喇叭",
   "type" : "Trainer",
-  "mark" : "CS3.5C",
-  "number" : "057"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "057"
 }, {
   "name" : "道具妨碍器",
   "type" : "Trainer",
-  "mark" : "CS3.5C",
-  "number" : "059"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "059"
 }, {
   "name" : "克拉拉",
   "type" : "Trainer",
-  "mark" : "CS3.5C",
-  "number" : "060"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "060"
 }, {
   "name" : "赛宝利",
   "type" : "Trainer",
-  "mark" : "CS3.5C",
-  "number" : "061"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "061"
 }, {
   "name" : "皮欧尼",
   "type" : "Trainer",
-  "mark" : "CS3.5C",
-  "number" : "062"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "062"
 }, {
   "name" : "通顶雪道",
   "type" : "Trainer",
-  "mark" : "CS3.5C",
-  "number" : "063"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "063"
 }, {
   "name" : "冲击能量",
   "type" : "Energy",
-  "mark" : "CS3.5C",
-  "number" : "064"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "064"
 }, {
   "name" : "螺旋能量",
   "type" : "Energy",
-  "mark" : "CS3.5C",
-  "number" : "065"
+  "setCode" : "CS3.5C",
+  "cardIndex" : "065"
 } ]

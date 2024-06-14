@@ -1,36 +1,36 @@
 [ {
   "name" : "白马蕾冠王V",
   "type" : "Pokémon",
-  "mark" : "CS3bC",
-  "number" : "044"
+  "setCode" : "CS3bC",
+  "cardIndex" : "044"
 }, {
   "name" : "白马蕾冠王VMAX",
   "type" : "Pokémon",
-  "mark" : "CS3bC",
-  "number" : "045"
+  "setCode" : "CS3bC",
+  "cardIndex" : "045"
 }, {
   "name" : "连击武道熊师V",
   "type" : "Pokémon",
-  "mark" : "CS3bC",
-  "number" : "085"
+  "setCode" : "CS3bC",
+  "cardIndex" : "085"
 }, {
   "name" : "连击武道熊师VMAX",
   "type" : "Pokémon",
-  "mark" : "CS3bC",
-  "number" : "086"
+  "setCode" : "CS3bC",
+  "cardIndex" : "086"
 }, {
   "name" : "潮漩扇",
   "type" : "Trainer",
-  "mark" : "CS3bC",
-  "number" : "105"
+  "setCode" : "CS3bC",
+  "cardIndex" : "105"
 }, {
   "name" : "等级球",
   "type" : "Trainer",
-  "mark" : "CS3bC",
-  "number" : "107"
+  "setCode" : "CS3bC",
+  "cardIndex" : "107"
 }, {
   "name" : "水之塔",
   "type" : "Trainer",
-  "mark" : "CS3bC",
-  "number" : "121"
+  "setCode" : "CS3bC",
+  "cardIndex" : "121"
 } ]

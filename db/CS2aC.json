@@ -1,26 +1,26 @@
 [ {
   "name" : "卡比兽",
   "type" : "Pokémon",
-  "mark" : "CS2aC",
-  "number" : "086"
+  "setCode" : "CS2aC",
+  "cardIndex" : "086"
 }, {
   "name" : "坚韧斗篷",
   "type" : "Trainer",
-  "mark" : "CS2aC",
-  "number" : "105"
+  "setCode" : "CS2aC",
+  "cardIndex" : "105"
 }, {
   "name" : "丹帝",
   "type" : "Trainer",
-  "mark" : "CS2aC",
-  "number" : "109"
+  "setCode" : "CS2aC",
+  "cardIndex" : "109"
 }, {
   "name" : "养鸟人",
   "type" : "Trainer",
-  "mark" : "CS2aC",
-  "number" : "110"
+  "setCode" : "CS2aC",
+  "cardIndex" : "110"
 }, {
   "name" : "战竞温泉",
   "type" : "Trainer",
-  "mark" : "CS2aC",
-  "number" : "112"
+  "setCode" : "CS2aC",
+  "cardIndex" : "112"
 } ]

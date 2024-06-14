@@ -1,4 +1,6 @@
-package com.example.demo;
+package com.ding.ptcg.simulator;
+
+import com.ding.ptcg.pojo.Player;
 
 import java.util.Comparator;
 

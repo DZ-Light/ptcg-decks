@@ -1,21 +1,21 @@
 [ {
   "name" : "恶食大王",
   "type" : "Pokémon",
-  "mark" : "CSM2cC",
-  "number" : "070"
+  "setCode" : "CSM2cC",
+  "cardIndex" : "070"
 }, {
   "name" : "联手呼唤",
   "type" : "Trainer",
-  "mark" : "CSM2cC",
-  "number" : "129"
+  "setCode" : "CSM2cC",
+  "cardIndex" : "129"
 }, {
   "name" : "虹色之花",
   "type" : "Trainer",
-  "mark" : "CSM2cC",
-  "number" : "134"
+  "setCode" : "CSM2cC",
+  "cardIndex" : "134"
 }, {
   "name" : "巨大炉灶",
   "type" : "Trainer",
-  "mark" : "CSM2cC",
-  "number" : "147"
+  "setCode" : "CSM2cC",
+  "cardIndex" : "147"
 } ]

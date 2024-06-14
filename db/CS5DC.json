@@ -1,21 +1,21 @@
 [ {
   "name" : "叶伊布VSTAR",
   "type" : "Pokémon",
-  "mark" : "CS5DC",
-  "number" : "011"
+  "setCode" : "CS5DC",
+  "cardIndex" : "011"
 }, {
   "name" : "暗黑补丁",
   "type" : "Trainer",
-  "mark" : "CS5DC",
-  "number" : "126"
+  "setCode" : "CS5DC",
+  "cardIndex" : "126"
 }, {
   "name" : "珠贝",
   "type" : "Trainer",
-  "mark" : "CS5DC",
-  "number" : "138"
+  "setCode" : "CS5DC",
+  "cardIndex" : "138"
 }, {
   "name" : "火夏",
   "type" : "Trainer",
-  "mark" : "CS5DC",
-  "number" : "147"
+  "setCode" : "CS5DC",
+  "cardIndex" : "147"
 } ]

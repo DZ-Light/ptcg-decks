@@ -1,76 +1,76 @@
 [ {
   "name" : "强颚鸡母虫",
   "type" : "Pokémon",
-  "mark" : "CSM2DC",
-  "number" : "025"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "025"
 }, {
   "name" : "咚咚鼠GX",
   "type" : "Pokémon",
-  "mark" : "CSM2DC",
-  "number" : "102"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "102"
 }, {
   "name" : "虫电宝",
   "type" : "Pokémon",
-  "mark" : "CSM2DC",
-  "number" : "103"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "103"
 }, {
   "name" : "月亮伊布&达克莱伊GX",
   "type" : "Pokémon",
-  "mark" : "CSM2DC",
-  "number" : "163"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "163"
 }, {
   "name" : "宝可梦通信",
   "type" : "Trainer",
-  "mark" : "CSM2DC",
-  "number" : "265"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "265"
 }, {
   "name" : "莉莉艾的皮皮玩偶",
   "type" : "Trainer",
-  "mark" : "CSM2DC",
-  "number" : "270"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "270"
 }, {
   "name" : "重置印章",
   "type" : "Trainer",
-  "mark" : "CSM2DC",
-  "number" : "271"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "271"
 }, {
   "name" : "回转滑板",
   "type" : "Trainer",
-  "mark" : "CSM2DC",
-  "number" : "289"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "289"
 }, {
   "name" : "莉佳的款待",
   "type" : "Trainer",
-  "mark" : "CSM2DC",
-  "number" : "294"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "294"
 }, {
   "name" : "古兹马&哈拉",
   "type" : "Trainer",
-  "mark" : "CSM2DC",
-  "number" : "301"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "301"
 }, {
   "name" : "竹兰&嘉德丽雅",
   "type" : "Trainer",
-  "mark" : "CSM2DC",
-  "number" : "306"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "306"
 }, {
   "name" : "玛奥&水莲",
   "type" : "Trainer",
-  "mark" : "CSM2DC",
-  "number" : "322"
-},  {
+  "setCode" : "CSM2DC",
+  "cardIndex" : "322"
+}, {
   "name" : "熔接工",
   "type" : "Trainer",
-  "mark" : "CSM2DC",
-  "number" : "329"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "329"
 }, {
   "name" : "格斗道场",
   "type" : "Trainer",
-  "mark" : "CSM2DC",
-  "number" : "335"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "335"
 }, {
   "name" : "常青森林",
   "type" : "Trainer",
-  "mark" : "CSM2DC",
-  "number" : "341"
+  "setCode" : "CSM2DC",
+  "cardIndex" : "341"
 } ]

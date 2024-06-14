@@ -1,26 +1,26 @@
 [ {
   "name" : "梦幻",
   "type" : "Pokémon",
-  "mark" : "CSDC",
-  "number" : "002"
+  "setCode" : "CSDC",
+  "cardIndex" : "002"
 }, {
   "name" : "伊裴尔塔尔",
   "type" : "Pokémon",
-  "mark" : "CSDC",
-  "number" : "012"
+  "setCode" : "CSDC",
+  "cardIndex" : "012"
 }, {
   "name" : "苍响V",
   "type" : "Pokémon",
-  "mark" : "CSDC",
-  "number" : "017"
+  "setCode" : "CSDC",
+  "cardIndex" : "017"
 }, {
   "name" : "飞翔皮卡丘V",
   "type" : "Pokémon",
-  "mark" : "CSDC",
-  "number" : "023"
+  "setCode" : "CSDC",
+  "cardIndex" : "023"
 }, {
   "name" : "飞翔皮卡丘VMAX",
   "type" : "Pokémon",
-  "mark" : "CSDC",
-  "number" : "024"
+  "setCode" : "CSDC",
+  "cardIndex" : "024"
 } ]

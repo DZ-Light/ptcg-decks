@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.ding.ptcg.pojo;
 
 import lombok.Data;
 

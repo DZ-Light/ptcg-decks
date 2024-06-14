@@ -1,61 +1,61 @@
 [ {
   "name" : "朽木妖&黑夜魔灵GX",
   "type" : "Pokémon",
-  "mark" : "CSM2.5C",
-  "number" : "016"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "016"
 }, {
   "name" : "瓦斯弹",
   "type" : "Pokémon",
-  "mark" : "CSM2.5C",
-  "number" : "017"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "017"
 }, {
   "name" : "花舞鸟GX",
   "type" : "Pokémon",
-  "mark" : "CSM2.5C",
-  "number" : "021"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "021"
 }, {
   "name" : "玛夏多",
   "type" : "Pokémon",
-  "mark" : "CSM2.5C",
-  "number" : "023"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "023"
 }, {
   "name" : "狃拉",
   "type" : "Pokémon",
-  "mark" : "CSM2.5C",
-  "number" : "029"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "029"
 }, {
   "name" : "玛狃拉GX",
   "type" : "Pokémon",
-  "mark" : "CSM2.5C",
-  "number" : "030"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "030"
 }, {
   "name" : "大嘴娃GX",
   "type" : "Pokémon",
-  "mark" : "CSM2.5C",
-  "number" : "032"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "032"
 }, {
   "name" : "阿尔宙斯&帝牙卢卡&帕路奇亚GX",
   "type" : "Pokémon",
-  "mark" : "CSM2.5C",
-  "number" : "036"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "036"
 }, {
   "name" : "祈祷师",
   "type" : "Trainer",
-  "mark" : "CSM2.5C",
-  "number" : "054"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "054"
 }, {
   "name" : "霍米加",
   "type" : "Trainer",
-  "mark" : "CSM2.5C",
-  "number" : "055"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "055"
 }, {
   "name" : "混沌潮漩",
   "type" : "Trainer",
-  "mark" : "CSM2.5C",
-  "number" : "057"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "057"
 }, {
   "name" : "弱点防守能量",
   "type" : "Energy",
-  "mark" : "CSM2.5C",
-  "number" : "061"
+  "setCode" : "CSM2.5C",
+  "cardIndex" : "061"
 } ]

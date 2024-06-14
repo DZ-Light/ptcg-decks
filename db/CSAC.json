@@ -1,91 +1,91 @@
 [ {
   "name" : "先机球",
   "type" : "Trainer",
-  "mark" : "CSAC",
-  "number" : "010"
+  "setCode" : "CSAC",
+  "cardIndex" : "010"
 }, {
   "name" : "进化熏香",
   "type" : "Trainer",
-  "mark" : "CSAC",
-  "number" : "011"
+  "setCode" : "CSAC",
+  "cardIndex" : "011"
 }, {
   "name" : "普通钓竿",
   "type" : "Trainer",
-  "mark" : "CSAC",
-  "number" : "014"
+  "setCode" : "CSAC",
+  "cardIndex" : "014"
 }, {
   "name" : "宝可装置3.0",
   "type" : "Trainer",
-  "mark" : "CSAC",
-  "number" : "015"
+  "setCode" : "CSAC",
+  "cardIndex" : "015"
 }, {
   "name" : "大护符",
   "type" : "Trainer",
-  "mark" : "CSAC",
-  "number" : "016"
+  "setCode" : "CSAC",
+  "cardIndex" : "016"
 }, {
   "name" : "气球",
   "type" : "Trainer",
-  "mark" : "CSAC",
-  "number" : "017"
+  "setCode" : "CSAC",
+  "cardIndex" : "017"
 }, {
   "name" : "索妮亚",
   "type" : "Trainer",
-  "mark" : "CSAC",
-  "number" : "018"
+  "setCode" : "CSAC",
+  "cardIndex" : "018"
 }, {
   "name" : "玛俐",
   "type" : "Trainer",
-  "mark" : "CSAC",
-  "number" : "022"
+  "setCode" : "CSAC",
+  "cardIndex" : "022"
 }, {
   "name" : "训练场地",
   "type" : "Trainer",
-  "mark" : "CSAC",
-  "number" : "023"
+  "setCode" : "CSAC",
+  "cardIndex" : "023"
 }, {
   "name" : "极光能量",
   "type" : "Energy",
-  "mark" : "CSAC",
-  "number" : "024"
+  "setCode" : "CSAC",
+  "cardIndex" : "024"
 }, {
   "name" : "基本恶能量",
   "type" : "Energy",
-  "mark" : "CSAC",
-  "number" : "DAR"
+  "setCode" : "CSAC",
+  "cardIndex" : "DAR"
 }, {
   "name" : "基本斗能量",
   "type" : "Energy",
-  "mark" : "CSAC",
-  "number" : "FIG"
+  "setCode" : "CSAC",
+  "cardIndex" : "FIG"
 }, {
   "name" : "基本火能量",
   "type" : "Energy",
-  "mark" : "CSAC",
-  "number" : "FIR"
+  "setCode" : "CSAC",
+  "cardIndex" : "FIR"
 }, {
   "name" : "基本草能量",
   "type" : "Energy",
-  "mark" : "CSAC",
-  "number" : "GRA"
+  "setCode" : "CSAC",
+  "cardIndex" : "GRA"
 }, {
   "name" : "基本雷能量",
   "type" : "Energy",
-  "mark" : "CSAC",
-  "number" : "LIG"
+  "setCode" : "CSAC",
+  "cardIndex" : "LIG"
 }, {
   "name" : "基本钢能量",
   "type" : "Energy",
-  "mark" : "CSAC",
-  "number" : "MET"
+  "setCode" : "CSAC",
+  "cardIndex" : "MET"
 }, {
   "name" : "基本超能量",
   "type" : "Energy",
-  "mark" : "CSAC",
-  "number" : "PSY"
+  "setCode" : "CSAC",
+  "cardIndex" : "PSY"
 }, {
   "name" : "基本水能量",
   "type" : "Energy",
-  "mark" : "CSAC",
-  "number" : "WAT"
+  "setCode" : "CSAC",
+  "cardIndex" : "WAT"
 } ]

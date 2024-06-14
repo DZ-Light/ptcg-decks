@@ -1,61 +1,61 @@
 [ {
   "name" : "叶伊布V",
   "type" : "Pokémon",
-  "mark" : "CS4aC",
-  "number" : "008"
+  "setCode" : "CS4aC",
+  "cardIndex" : "008"
 }, {
   "name" : "叶伊布VMAX",
   "type" : "Pokémon",
-  "mark" : "CS4aC",
-  "number" : "009"
+  "setCode" : "CS4aC",
+  "cardIndex" : "009"
 }, {
   "name" : "好胜毛蟹V",
   "type" : "Pokémon",
-  "mark" : "CS4aC",
-  "number" : "040"
+  "setCode" : "CS4aC",
+  "cardIndex" : "040"
 }, {
   "name" : "锹农炮虫",
   "type" : "Pokémon",
-  "mark" : "CS4aC",
-  "number" : "054"
+  "setCode" : "CS4aC",
+  "cardIndex" : "054"
 }, {
   "name" : "仙子伊布V",
   "type" : "Pokémon",
-  "mark" : "CS4aC",
-  "number" : "068"
+  "setCode" : "CS4aC",
+  "cardIndex" : "068"
 }, {
   "name" : "仙子伊布VMAX",
   "type" : "Pokémon",
-  "mark" : "CS4aC",
-  "number" : "069"
+  "setCode" : "CS4aC",
+  "cardIndex" : "069"
 }, {
   "name" : "伽勒尔 火焰鸟",
   "type" : "Pokémon",
-  "mark" : "CS4aC",
-  "number" : "083"
+  "setCode" : "CS4aC",
+  "cardIndex" : "083"
 }, {
   "name" : "铝钢龙V",
   "type" : "Pokémon",
-  "mark" : "CS4aC",
-  "number" : "106"
+  "setCode" : "CS4aC",
+  "cardIndex" : "106"
 }, {
   "name" : "铝钢龙VMAX",
   "type" : "Pokémon",
-  "mark" : "CS4aC",
-  "number" : "107"
+  "setCode" : "CS4aC",
+  "cardIndex" : "107"
 }, {
   "name" : "救援行李箱",
   "type" : "Trainer",
-  "mark" : "CS4aC",
-  "number" : "120"
+  "setCode" : "CS4aC",
+  "cardIndex" : "120"
 }, {
   "name" : "奇巴纳",
   "type" : "Trainer",
-  "mark" : "CS4aC",
-  "number" : "125"
+  "setCode" : "CS4aC",
+  "cardIndex" : "125"
 }, {
   "name" : "结晶洞窟",
   "type" : "Trainer",
-  "mark" : "CS4aC",
-  "number" : "130"
+  "setCode" : "CS4aC",
+  "cardIndex" : "130"
 } ]

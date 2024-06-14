@@ -1,16 +1,16 @@
 [ {
   "name" : "耿鬼&谜拟丘GX",
   "type" : "Pokémon",
-  "mark" : "CSM2bC",
-  "number" : "033"
+  "setCode" : "CSM2bC",
+  "cardIndex" : "033"
 }, {
   "name" : "超梦&梦幻GX",
   "type" : "Pokémon",
-  "mark" : "CSM2bC",
-  "number" : "034"
+  "setCode" : "CSM2bC",
+  "cardIndex" : "034"
 }, {
   "name" : "梦幻",
   "type" : "Pokémon",
-  "mark" : "CSM2bC",
-  "number" : "056"
+  "setCode" : "CSM2bC",
+  "cardIndex" : "056"
 } ]

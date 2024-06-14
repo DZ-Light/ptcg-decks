@@ -1,96 +1,96 @@
 [ {
   "name" : "冰砌鹅",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "037"
+  "setCode" : "CS4bC",
+  "cardIndex" : "037"
 }, {
   "name" : "逐电犬VMAX",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "045"
+  "setCode" : "CS4bC",
+  "cardIndex" : "045"
 }, {
   "name" : "梦幻V",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "048"
+  "setCode" : "CS4bC",
+  "cardIndex" : "048"
 }, {
   "name" : "梦幻VMAX",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "049"
+  "setCode" : "CS4bC",
+  "cardIndex" : "049"
 }, {
   "name" : "耿鬼V",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "072"
+  "setCode" : "CS4bC",
+  "cardIndex" : "072"
 }, {
   "name" : "耿鬼VMAX",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "073"
+  "setCode" : "CS4bC",
+  "cardIndex" : "073"
 }, {
   "name" : "胡帕V",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "079"
+  "setCode" : "CS4bC",
+  "cardIndex" : "079"
 }, {
   "name" : "盖诺赛克特V",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "085"
+  "setCode" : "CS4bC",
+  "cardIndex" : "085"
 }, {
   "name" : "七夕青鸟",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "091"
+  "setCode" : "CS4bC",
+  "cardIndex" : "091"
 }, {
   "name" : "苹裹龙",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "104"
+  "setCode" : "CS4bC",
+  "cardIndex" : "104"
 }, {
   "name" : "丰蜜龙",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "105"
+  "setCode" : "CS4bC",
+  "cardIndex" : "105"
 }, {
   "name" : "青绵鸟",
   "type" : "Pokémon",
-  "mark" : "CS4bC",
-  "number" : "109"
+  "setCode" : "CS4bC",
+  "cardIndex" : "109"
 }, {
   "name" : "强力糖锭",
   "type" : "Trainer",
-  "mark" : "CS4bC",
-  "number" : "118"
+  "setCode" : "CS4bC",
+  "cardIndex" : "118"
 }, {
   "name" : "消灾手套",
   "type" : "Trainer",
-  "mark" : "CS4bC",
-  "number" : "119"
+  "setCode" : "CS4bC",
+  "cardIndex" : "119"
 }, {
   "name" : "小菊儿的璀璨",
   "type" : "Trainer",
-  "mark" : "CS4bC",
-  "number" : "124"
+  "setCode" : "CS4bC",
+  "cardIndex" : "124"
 }, {
   "name" : "芭内特博士",
   "type" : "Trainer",
-  "mark" : "CS4bC",
-  "number" : "127"
+  "setCode" : "CS4bC",
+  "cardIndex" : "127"
 }, {
   "name" : "希嘉娜的决心",
   "type" : "Trainer",
-  "mark" : "CS4bC",
-  "number" : "128"
+  "setCode" : "CS4bC",
+  "cardIndex" : "128"
 }, {
   "name" : "风暴山脉",
   "type" : "Trainer",
-  "mark" : "CS4bC",
-  "number" : "130"
+  "setCode" : "CS4bC",
+  "cardIndex" : "130"
 }, {
   "name" : "汇流能量",
   "type" : "Energy",
-  "mark" : "CS4bC",
-  "number" : "132"
+  "setCode" : "CS4bC",
+  "cardIndex" : "132"
 } ]

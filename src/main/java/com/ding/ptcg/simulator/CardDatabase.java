@@ -1,5 +1,6 @@
-package com.example.demo;
+package com.ding.ptcg.simulator;
 
+import com.ding.ptcg.pojo.Card;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -43,13 +44,13 @@ public class CardDatabase {
     public void writeAll(List<Card> cards) {
         // 根据mark分组
         Map<String, List<Card>> cardsByMark = cards.stream()
-                .collect(Collectors.groupingBy(Card::getMark));
+                .collect(Collectors.groupingBy(Card::getSetCode));
 
         // 遍历每个分组，按number排序并写入对应的文件
         for (Map.Entry<String, List<Card>> entry : cardsByMark.entrySet()) {
             String mark = entry.getKey();
             List<Card> sortedCards = entry.getValue().stream()
-                    .sorted(Comparator.comparing(Card::getNumber))
+                    .sorted(Comparator.comparing(Card::getCardIndex))
                     .collect(Collectors.toList());
 
             String filePath = jsonDirectory + "/" + mark + ".json";

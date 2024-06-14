@@ -1,31 +1,31 @@
 [ {
   "name" : "卡璞・鸣鸣V",
   "type" : "Pokémon",
-  "mark" : "CS1DC",
-  "number" : "075"
+  "setCode" : "CS1DC",
+  "cardIndex" : "075"
 }, {
   "name" : "铝钢龙V",
   "type" : "Pokémon",
-  "mark" : "CS1DC",
-  "number" : "146"
+  "setCode" : "CS1DC",
+  "cardIndex" : "146"
 }, {
   "name" : "朋友手册",
   "type" : "Trainer",
-  "mark" : "CS1DC",
-  "number" : "174"
+  "setCode" : "CS1DC",
+  "cardIndex" : "174"
 }, {
   "name" : "金属碟",
   "type" : "Trainer",
-  "mark" : "CS1DC",
-  "number" : "182"
+  "setCode" : "CS1DC",
+  "cardIndex" : "182"
 }, {
   "name" : "活力头带",
   "type" : "Trainer",
-  "mark" : "CS1DC",
-  "number" : "187"
+  "setCode" : "CS1DC",
+  "cardIndex" : "187"
 }, {
   "name" : "幸运蛋",
   "type" : "Trainer",
-  "mark" : "CS1DC",
-  "number" : "188"
+  "setCode" : "CS1DC",
+  "cardIndex" : "188"
 } ]

@@ -1,46 +1,46 @@
 [ {
   "name" : "卡璞・鸣鸣VMAX",
   "type" : "Pokémon",
-  "mark" : "CS3aC",
-  "number" : "035"
+  "setCode" : "CS3aC",
+  "cardIndex" : "035"
 }, {
   "name" : "黑马蕾冠王V",
   "type" : "Pokémon",
-  "mark" : "CS3aC",
-  "number" : "054"
+  "setCode" : "CS3aC",
+  "cardIndex" : "054"
 }, {
   "name" : "黑马蕾冠王VMAX",
   "type" : "Pokémon",
-  "mark" : "CS3aC",
-  "number" : "055"
+  "setCode" : "CS3aC",
+  "cardIndex" : "055"
 }, {
   "name" : "伽勒尔 闪电鸟V",
   "type" : "Pokémon",
-  "mark" : "CS3aC",
-  "number" : "060"
+  "setCode" : "CS3aC",
+  "cardIndex" : "060"
 }, {
   "name" : "酷豹V",
   "type" : "Pokémon",
-  "mark" : "CS3aC",
-  "number" : "090"
+  "setCode" : "CS3aC",
+  "cardIndex" : "090"
 }, {
   "name" : "亚莎",
   "type" : "Trainer",
-  "mark" : "CS3aC",
-  "number" : "115"
+  "setCode" : "CS3aC",
+  "cardIndex" : "115"
 }, {
   "name" : "夏科娅",
   "type" : "Trainer",
-  "mark" : "CS3aC",
-  "number" : "119"
+  "setCode" : "CS3aC",
+  "cardIndex" : "119"
 }, {
   "name" : "芽米",
   "type" : "Trainer",
-  "mark" : "CS3aC",
-  "number" : "122"
+  "setCode" : "CS3aC",
+  "cardIndex" : "122"
 }, {
   "name" : "恶之塔",
   "type" : "Trainer",
-  "mark" : "CS3aC",
-  "number" : "123"
+  "setCode" : "CS3aC",
+  "cardIndex" : "123"
 } ]

@@ -1,26 +1,26 @@
 [ {
   "name" : "大狼犬",
   "type" : "Pokémon",
-  "mark" : "CS5aC",
-  "number" : "081"
+  "setCode" : "CS5aC",
+  "cardIndex" : "081"
 }, {
   "name" : "洗翠 大剑鬼VSTAR",
   "type" : "Pokémon",
-  "mark" : "CS5aC",
-  "number" : "086"
+  "setCode" : "CS5aC",
+  "cardIndex" : "086"
 }, {
   "name" : "大尾狸",
   "type" : "Pokémon",
-  "mark" : "CS5aC",
-  "number" : "105"
+  "setCode" : "CS5aC",
+  "cardIndex" : "105"
 }, {
   "name" : "阿尔宙斯VSTAR",
   "type" : "Pokémon",
-  "mark" : "CS5aC",
-  "number" : "107"
+  "setCode" : "CS5aC",
+  "cardIndex" : "107"
 }, {
   "name" : "超群眼镜",
   "type" : "Trainer",
-  "mark" : "CS5aC",
-  "number" : "118"
+  "setCode" : "CS5aC",
+  "cardIndex" : "118"
 } ]

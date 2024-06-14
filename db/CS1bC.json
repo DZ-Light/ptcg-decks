@@ -1,46 +1,46 @@
 [ {
   "name" : "具甲武者",
   "type" : "Pokémon",
-  "mark" : "CS1bC",
-  "number" : "026"
+  "setCode" : "CS1bC",
+  "cardIndex" : "026"
 }, {
   "name" : "伽勒尔 蛇纹熊",
   "type" : "Pokémon",
-  "mark" : "CS1bC",
-  "number" : "059"
+  "setCode" : "CS1bC",
+  "cardIndex" : "059"
 }, {
   "name" : "乌贼王V",
   "type" : "Pokémon",
-  "mark" : "CS1bC",
-  "number" : "076"
+  "setCode" : "CS1bC",
+  "cardIndex" : "076"
 }, {
   "name" : "乌贼王VMAX",
   "type" : "Pokémon",
-  "mark" : "CS1bC",
-  "number" : "077"
+  "setCode" : "CS1bC",
+  "cardIndex" : "077"
 }, {
   "name" : "苍响V",
   "type" : "Pokémon",
-  "mark" : "CS1bC",
-  "number" : "103"
+  "setCode" : "CS1bC",
+  "cardIndex" : "103"
 }, {
   "name" : "七夕青鸟",
   "type" : "Pokémon",
-  "mark" : "CS1bC",
-  "number" : "107"
+  "setCode" : "CS1bC",
+  "cardIndex" : "107"
 }, {
   "name" : "泡沫栗鼠",
   "type" : "Pokémon",
-  "mark" : "CS1bC",
-  "number" : "111"
+  "setCode" : "CS1bC",
+  "cardIndex" : "111"
 }, {
   "name" : "奇诺栗鼠",
   "type" : "Pokémon",
-  "mark" : "CS1bC",
-  "number" : "112"
+  "setCode" : "CS1bC",
+  "cardIndex" : "112"
 }, {
   "name" : "双子能量",
   "type" : "Energy",
-  "mark" : "CS1bC",
-  "number" : "136"
+  "setCode" : "CS1bC",
+  "cardIndex" : "136"
 } ]

@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.ding.ptcg.simulator;
 
+import com.ding.ptcg.pojo.Deck;
+import com.ding.ptcg.pojo.Player;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;

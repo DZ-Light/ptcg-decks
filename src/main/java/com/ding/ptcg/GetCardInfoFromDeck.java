@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.ding.ptcg;
 
+import com.ding.ptcg.pojo.Card;
+import com.ding.ptcg.simulator.CardDatabase;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 
@@ -11,7 +13,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class PTCGDecksApplication {
+public class GetCardInfoFromDeck {
     static CardDatabase db = new CardDatabase();
 
     public static void main(String[] args) {
@@ -39,8 +41,8 @@ public class PTCGDecksApplication {
                 Card card = new Card();
                 card.setName(Name);
                 card.setType(Type);
-                card.setMark(URL.split("/")[5]);
-                card.setNumber(URL.split("/")[6].split("\\.")[0]);
+                card.setSetCode(URL.split("/")[5]);
+                card.setCardIndex(URL.split("/")[6].split("\\.")[0]);
                 db.addCard(card);
             }
         } catch (IOException e) {
